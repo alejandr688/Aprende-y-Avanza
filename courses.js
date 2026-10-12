@@ -2,7 +2,7 @@
 window.COURSE_DATA = {
   "brand": "Aprende y Avanza",
   "whatsappUrl": "https://wa.me/525525734814",
-  "facebook": "https://www.facebook.com/aprendeconmigo68",
+  "facebook": "https://www.facebook.com/profile.php?id=61595413887567",
   "common": {
     "price": 300,
     "currency": "MXN",

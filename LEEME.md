@@ -1,62 +1,76 @@
-# Aprende y Avanza — página de cursos
+﻿# Aprende y Avanza — sitio general
 
-## Abrir la página
-
-Haz doble clic en **index.html**. Funciona directamente en Edge, Chrome, Firefox o Safari actuales, sin instalar programas ni ejecutar comandos. Conserva todos los archivos de esta carpeta juntos.
-
-La vista previa local durante el desarrollo puede estar en http://127.0.0.1:4173. Para abrirla después, usa index.html; esa dirección solo funciona mientras el servidor de la sesión sigue activo.
+Abre **index.html** con doble clic. La página funciona sin instalar programas. Conserva los archivos y las carpetas juntos.
 
 ## Qué incluye
 
-- Diseño adaptable para computadora, tableta y celular.
-- Cinco cursos reales, con búsqueda y filtros por categoría.
-- Detalles de 20 módulos y 88 sesiones, requisitos y proyectos finales.
-- Descarga de los cinco temarios PDF originales.
-- Comparación de dos o tres cursos, conservada al filtrar el catálogo.
-- Guía de dos pasos para elegir curso según objetivo y disponibilidad.
-- Tabla de fechas y horarios, beneficios y preguntas frecuentes.
-- Enlaces a Facebook y WhatsApp con mensajes preparados por curso.
-- Formulario que abre WhatsApp: la persona revisa y envía su mensaje allí.
-- Navegación por teclado, foco visible, diálogos con Escape y movimiento reducido.
-- Información de privacidad y metadatos para buscadores.
+- Catálogo general de siete cursos con búsqueda y filtros por área y estado.
+- Inscripciones abiertas: Machine Learning con Python y R para Análisis de Datos.
+- Cursos en marcha: Excel + Power BI y SQL.
+- Python desde cero finalizado; Git y GitHub y LaTeX disponibles para consultar nuevas fechas.
+- Fichas de curso, programas y cinco temarios PDF descargables.
+- Calendario de grupos, metodología, referencias reales y preguntas frecuentes.
+- Contacto por WhatsApp al 55 2573 4814, Facebook e Instagram actualizados.
+- Diseño adaptable, menú móvil, navegación con teclado y diálogos accesibles.
 
-## Archivos
+## Información confirmada el 12 de octubre de 2026
 
-| Archivo | Contenido |
-| --- | --- |
-| index.html | Estructura, secciones, textos generales y metadatos. |
-| styles.css | Colores, tipografías, composición y adaptación a pantallas. |
-| courses.js | Información real de los cursos, temarios y datos de contacto. |
-| app.js | Búsqueda, filtros, comparador, guía y formulario. |
-| themes.js | Selector de apariencia, modo automático y preferencia guardada. |
-| themes.css | Paletas Claro, Noche, Bosque y Arena. |
-| assets/ | Icono de la web y convocatoria original. |
-| temarios/ | Los cinco PDF descargables. |
+| Curso | Estado | Inicio | Horario | Precio |
+| --- | --- | --- | --- | --- |
+| Machine Learning con Python | Inscripciones abiertas | 2 noviembre 2026 | Lunes a viernes, 19:00–20:00 | $300 MXN |
+| R para Análisis de Datos | Inscripciones abiertas | 31 octubre 2026 | Sábado y domingo, 09:00–12:00 | $300 MXN |
+| Excel + Power BI | En curso | 26 septiembre 2026 | Sábado y domingo, 09:00–12:00 | $300 MXN |
+| SQL | En curso | 28 septiembre 2026 | Lunes a viernes, 19:00–20:00 | $300 MXN |
+| Python desde cero | Finalizado | 10 septiembre 2026 | 20:00–21:00; finalizó el 9 octubre | No publicado |
 
-## Datos utilizados
+Las nuevas convocatorias y el cierre de Python fueron confirmados por el propietario. Las fechas iniciales, precios y horarios de Excel y SQL se verificaron en la primera página de sus PDF. Sus cierres previstos (18 y 23 de octubre) se calcularon con las cuatro semanas y las sesiones anunciadas; ajustar si hubo cambios o suspensiones.
 
-Marca: **Aprende y Avanza**. WhatsApp: **55 2573 4814**. Facebook: **facebook.com/aprendeconmigo68**.
+No se proporcionaron la fecha final, duración ni temario de Machine Learning, ni fecha final del nuevo grupo de R. No se inventaron. Los horarios se muestran como fueron proporcionados y se solicita confirmar la zona horaria al inscribirse.
 
-Precio: **$300 MXN, pago único por cada curso**. Duración: cuatro semanas. Excel + Power BI comienza el 26 de septiembre de 2026, sábados y domingos de 09:00 a 12:00. Los otros cuatro cursos empiezan el 28 de septiembre, de lunes a viernes: R 16:00–17:00, Git y GitHub 17:00–18:00, LaTeX 18:00–19:00 y SQL 19:00–20:00.
+## Actualizar convocatorias y referencias
 
-Los programas y contactos se tomaron de los cinco PDF y la convocatoria proporcionados. No se agregaron testimonios, fotografías de un instructor, cifras de alumnos, acreditaciones oficiales ni información de cupo que no estuviera confirmada.
+Edita **site-config.js**. La lista `cohorts` permite añadir varios grupos de un mismo curso.
 
-La zona horaria no figura en los archivos originales: la web pide confirmarla por WhatsApp. Tampoco se promete acceso ilimitado a las grabaciones ni una política de devolución no proporcionada.
+```js
+{
+  id: 'sql-nuevo-grupo',
+  courseId: 'sql',
+  label: 'Nueva edición',
+  status: 'open',
+  start: '2026-11-02',
+  end: '2026-11-27',
+  registrationCloses: '2026-11-01',
+  schedule: 'Lunes a viernes · 19:00–20:00 · Ciudad de México',
+  price: 300
+}
+```
 
-## Actualizar contenido
+Ejemplo ilustrativo, no una convocatoria real. Identificadores: `machine-learning`, `python`, `excel-power-bi`, `sql`, `git-github`, `latex`, `r`.
 
-Edita courses.js para cambiar temarios, descripciones, requisitos, proyectos y enlaces PDF. La variable principal es window.COURSE_DATA. Los textos, fechas y precios destacados en index.html y app.js deben actualizarse también si cambia la convocatoria. Busca “2026”, “300” o el número de WhatsApp para localizar las menciones.
+Estados: `open` (inscripciones), `active` (en curso), `upcoming` (próximamente), `completed` (finalizado), `cancelled` (oculto). El calendario usa la fecha de Ciudad de México: los grupos abiertos pasan a en curso al iniciar y a finalizados después de `end`. Si la fecha final es desconocida (`null`), hay que añadirla o marcar el cierre manualmente. Los cambios de estado se reflejan al recargar la página. Una fecha límite de inscripción vencida deja de anunciar cupo abierto.
 
-La página usa las tipografías Manrope y DM Sans de Google Fonts. Sin internet se muestran tipografías del sistema. Los PDF, estilos, iconos y funciones del catálogo son locales; WhatsApp y Facebook requieren conexión.
+Los filtros admiten varias ediciones del mismo curso. Los mensajes de alumnos se editan en `references`; incluir solo referencias reales. Las transcripciones actuales vienen de la imagen `843449237_122096173707513796_5867413423200779245_n.jpg` de la carpeta Referencias Cursos/Septiembre 2026. Se omiten nombres y teléfonos. Las otras dos capturas documentan Classroom, Drive, materiales y el proyecto de Python. No se distribuyen capturas originales ni códigos de acceso.
+
+## Archivos usados por la web
+
+- `index.html`: estructura y contenido general.
+- `home.css`: diseño y adaptación a pantallas.
+- `home.js`: catálogo, fichas, filtros, grupos y contacto; fichas básicas de Python y Machine Learning.
+- `site-config.js`: contacto, convocatorias y referencias.
+- `courses.js`: programas detallados de los cinco cursos originales.
+- `assets/favicon.svg`: identidad del navegador.
+- `temarios/`: cinco PDF originales sin modificaciones.
+
+Los PDF corresponden a septiembre de 2026: sus precios, fechas y horarios no sustituyen los de las nuevas convocatorias. La ficha de R identifica explícitamente el programa de septiembre como referencia.
+
+Los archivos `app.js`, `styles.css`, `themes.js` y `themes.css` se conservan de la versión anterior y ya no son cargados por la nueva página. El ZIP antiguo también es histórico.
+
+## Inscripciones y privacidad
+
+El formulario prepara un mensaje y abre WhatsApp. La persona debe enviarlo allí; no almacena datos, procesa pagos ni confirma inscripciones automáticamente. Los enlaces a redes requieren internet. Las tipografías usan Google Fonts y cuentan con fuentes alternativas locales.
 
 ## Publicar
 
-La página está terminada como sitio estático local. Para que otras personas puedan visitarla por internet, hay que alojar el contenido de esta carpeta en un servicio de alojamiento web y asignarle una dirección. Sube index.html, styles.css, themes.css, themes.js, courses.js, app.js y las carpetas assets y temarios manteniendo sus nombres y estructura. No necesitas servidor de aplicaciones ni base de datos.
+El resultado está guardado localmente, sin despliegue a internet. **Aprende-y-Avanza-General.zip** contiene solo los archivos necesarios para publicar, además de este documento. Descomprímelo y sube su contenido a un alojamiento estático. No requiere servidor de aplicaciones ni base de datos.
 
-Después de publicar, verifica las descargas PDF y los enlaces de WhatsApp desde el dominio definitivo. Las inscripciones y los pagos se coordinan directamente por WhatsApp; el sitio no procesa pagos ni registra alumnos automáticamente.
-
-No publiques las carpetas research o qa si están presentes: son material auxiliar de desarrollo y verificación.
-
-## Apariencia
-
-Arena es la apariencia predeterminada para las visitas sin una preferencia guardada. El botón Apariencia de la cabecera permite elegir Automático, Claro, Noche, Bosque y Arena. Automático sigue el modo claro u oscuro del dispositivo y responde a sus cambios. La selección se aplica a toda la página y se recuerda mediante almacenamiento local de este navegador. Si el navegador bloquea el almacenamiento, el tema funciona durante la visita y se indica en el selector. No se envía esta preferencia a ningún servidor. Puedes editar las paletas en themes.css.
+No publiques la carpeta completa del proyecto: contiene copias históricas, Git y material auxiliar. Usa el ZIP nuevo. Después de publicar, verifica WhatsApp y las descargas desde tu dominio.
