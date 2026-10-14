@@ -24,7 +24,7 @@ Excel, R y Git comienzan desde las bases. Machine Learning requiere Python bási
 - Los cuatro grupos nuevos tienen un pago único por curso completo, sin mensualidades, según sus PDF.
 - Los accesos se entregan por WhatsApp tras confirmar el pago. No se publican enlaces privados de alumnos.
 - Siete referencias nuevas, sin duplicar comentarios repetidos en ambas capturas. Antonio López y Carlos Arellano aparecen con fragmentos identificados. Daf Leyva se identifica como experiencia de apoyo en trabajos. Se mantienen los dos agradecimientos anteriores de Python.
-- Las dos capturas originales se pueden desplegar y abrir desde Referencias. No se les atribuye un curso o fecha no identificados.
+- Las dos capturas originales se muestran directamente en Referencias y se pueden ampliar. Los testimonios en texto quedan en un desplegable adicional. No se les atribuye un curso o fecha no identificados.
 
 ## Archivos usados por la web
 
@@ -58,3 +58,7 @@ El formulario prepara un mensaje y abre WhatsApp al 55 2573 4814. La persona lo 
 La actualización se guarda localmente. **Aprende-y-Avanza-General.zip** contiene los archivos vigentes, imágenes, temarios y este documento. Descomprímelo y sube su contenido al alojamiento estático. No requiere servidor de aplicaciones ni base de datos.
 
 No publiques toda la carpeta de trabajo: contiene Git y copias históricas. Aprende-y-Avanza-Web.zip es anterior y se conserva. Después de publicar, verifica WhatsApp y las descargas desde el dominio final.
+
+Los nuevos grupos aparecen antes del catálogo, en tarjetas con ilustración, fecha destacada, horario, nivel, duración, precio y acceso a inscripción. Los grupos en curso se consultan en un desplegable separado.
+
+Las tarjetas de nuevos grupos y del catálogo incluyen un botón directo «Descargar temario» para cada curso con PDF disponible. Se identifica la edición histórica cuando corresponde. Python conserva su consulta por WhatsApp porque no se proporcionó un PDF.
