@@ -1,0 +1,101 @@
+/* Paleta de las ilustraciones: papel crema, tinta oscura y notas de color. */
+:root {
+  --ink: #17172c;
+  --muted: #67616d;
+  --blue: #71429b;
+  --line: #e4d9cf;
+  --paper: #fff9ef;
+  --cream: #fffdf7;
+  --yellow: #ffe36b;
+  --yellow-hover: #f6d24d;
+  --lilac: #d9baf5;
+  --lilac-light: #f0e5fa;
+  --pink: #f6b6dc;
+  --pink-light: #fff0f6;
+  --mint: #bce9d3;
+  --mint-light: #edf8ee;
+}
+
+::selection { background: var(--lilac); color: var(--ink); }
+.announcement { background: var(--lilac); color: var(--ink); }
+.announcement a { color: var(--ink); }
+.site-header { background: #fff9eff5; }
+.mobile-nav, .skip-link { background: var(--cream); }
+.brand b { color: #a13576; }
+.brand-image, .brand-cover, .brand-hero-art img { border-color: #e9d9c5; }
+.brand-cover, .brand-hero-art img { background: #faf3e5; }
+
+.primary { background: var(--yellow); color: var(--ink); border-color: #e3c44e; }
+.primary:hover { background: var(--yellow-hover); }
+.secondary { background: var(--cream); border-color: var(--line); }
+.secondary:hover { background: var(--lilac-light); }
+.hero h1 > span {
+  color: var(--ink);
+  background: linear-gradient(transparent 60%, var(--lilac) 60%, var(--lilac) 92%, transparent 92%);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.hero-description, .hero-notes { color: var(--muted); }
+.mini-star { color: #a13576; }
+.hero-notes i { color: #32674e; }
+.subject-strip { background: #fff1b9; border-color: #eadb9c; }
+.subject-strip span { color: #71623c; }
+.subject-strip i { color: #71429b; }
+.section-heading .eyebrow { color: #79566d; }
+
+.filter-tabs button[aria-pressed=true] { background: var(--lilac); color: var(--ink); }
+.filter-tabs button[aria-pressed=false]:hover { background: var(--lilac-light); }
+.search-box, .category-select select { background: var(--cream); }
+.course-card { background: var(--cream); }
+.course-card:hover { box-shadow: 0 9px 25px #583f5d12; }
+.course-card[data-theme=python] { --cover-bg: #fff0a6; --cover-ink: #594b19; }
+.course-card[data-theme=excel] { --cover-bg: #cbebc0; --cover-ink: #305b37; }
+.course-card[data-theme=sql] { --cover-bg: #f7c9e2; --cover-ink: #763954; }
+.course-card[data-theme=git] { --cover-bg: #f9ddbc; --cover-ink: #824e2b; }
+.course-card[data-theme=latex] { --cover-bg: #e9d5f5; --cover-ink: #694380; }
+.course-card[data-theme=r] { --cover-bg: #c8e7f4; --cover-ink: #315d7a; }
+.course-card[data-theme=ml] { --cover-bg: #d8baf0; --cover-ink: #513269; }
+.tags span { background: #f3eaf7; color: #685276; }
+.status { color: #69606d; }
+.status.open { color: #286246; }
+.status.active { color: #71429b; }
+.status.upcoming { color: #886220; }
+.status.completed { color: #796379; }
+.empty-state { background: var(--lilac-light); }
+
+.groups-section { background: var(--mint-light); border-color: #d1e6d2; }
+.groups-empty { background: #fffdf7cc; border-color: #c9ddc9; }
+.groups-empty p, .schedule-note { color: #52694f; }
+.calendar-icon { color: #35664c; border-color: #a6ccb3; background: #daf0dc; }
+.group-row { background: var(--cream); }
+.experience-steps article > span { color: #865581; }
+.experience-steps article > b { color: #71429b; }
+.references-section { background: var(--pink-light); border-color: #efdae6; }
+.quote-card { background: var(--cream); border-color: #ecdbe3; }
+.quote-mark { color: #a13576; }
+.community-card { background: var(--lilac-light); color: var(--ink); border: 1px solid #dec9ed; }
+.community-star { color: #71429b; }
+.community-card .eyebrow { color: #73558a; }
+.community-card p:not(.eyebrow) { color: #655771; }
+.community-card > div { color: #71429b; font-weight: 700; }
+summary > span { color: #896090; }
+
+.contact-section { background: #252239; color: #fff9ef; }
+.contact-copy .eyebrow { color: var(--pink); }
+.contact-copy h2 span { color: var(--yellow); }
+.contact-copy > p:not(.eyebrow) { color: #ddd1e4; }
+.contact-phone small { color: #d8c6e6; }
+.contact-phone > span { color: var(--mint); }
+.contact-social { color: var(--lilac); }
+.contact-form { background: var(--cream); }
+.contact-form label span { color: var(--muted); }
+.contact-form input, .contact-form select, .contact-form textarea {
+  background: #fffaf1;
+  border-color: #e3d8cd;
+}
+.form-note { color: var(--muted); }
+.form-status { background: var(--mint-light); }
+.dialog-close { background: var(--cream); }
+.detail-aside, .notice { background: var(--lilac-light); border-color: #dfccec; }
+.cohort-info { border-color: #dfccec; }
+dialog::backdrop { background: #21192bb3; }

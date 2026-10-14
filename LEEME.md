@@ -1,4 +1,4 @@
-﻿# Aprende y Avanza — sitio general
+# Aprende y Avanza — sitio general
 
 Abre **index.html** con doble clic. La página funciona sin instalar programas. Conserva los archivos y las carpetas juntos.
 
@@ -55,10 +55,13 @@ Los filtros admiten varias ediciones del mismo curso. Los mensajes de alumnos se
 
 - `index.html`: estructura y contenido general.
 - `home.css`: diseño y adaptación a pantallas.
+- `palette.css`: paleta coordinada con las ilustraciones; crema, lila, rosa, amarillo y verde menta.
 - `home.js`: catálogo, fichas, filtros, grupos y contacto; fichas básicas de Python y Machine Learning.
 - `site-config.js`: contacto, convocatorias y referencias.
 - `courses.js`: programas detallados de los cinco cursos originales.
-- `assets/favicon.svg`: identidad del navegador.
+- `assets/aprende-y-avanza-portada.png`: portada horizontal proporcionada por el propietario.
+- `assets/aprende-y-avanza-identidad.png`: imagen cuadrada en cabecera, inicio, pie e icono del navegador.
+- Las imágenes se conservan completas, sin recortes ni modificaciones.
 - `temarios/`: cinco PDF originales sin modificaciones.
 
 Los PDF corresponden a septiembre de 2026: sus precios, fechas y horarios no sustituyen los de las nuevas convocatorias. La ficha de R identifica explícitamente el programa de septiembre como referencia.

@@ -1,20 +1,22 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es-MX">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f8fa">
+  <meta name="theme-color" content="#fff9ef">
   <title>Aprende y Avanza · Cursos, comunidad y nuevas oportunidades</title>
   <meta name="description" content="Descubre los cursos de Aprende y Avanza: Machine Learning con Python, Python, Excel y Power BI, SQL, Git y GitHub, LaTeX y R. Consulta próximos grupos, referencias e inscripciones por WhatsApp.">
   <meta property="og:title" content="Aprende y Avanza · Tu siguiente paso empieza aquí">
   <meta property="og:description" content="Un espacio para aprender nuevas habilidades. Explora nuestros cursos, conoce la comunidad y encuentra tu próximo grupo.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/aprende-y-avanza-identidad.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/aprende-y-avanza-identidad.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="palette.css">
   <script src="courses.js" defer></script>
   <script src="site-config.js" defer></script>
   <script src="home.js" defer></script>
@@ -24,7 +26,7 @@
   <div class="announcement"><div class="container"><span>Aprender algo nuevo es abrir una puerta.</span><a href="#grupos"><span id="announcement-label">Consulta nuestras próximas convocatorias</span> <span aria-hidden="true">↗</span></a></div></div>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Aprende y Avanza, inicio"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>aprende<span>y avanza<b>.</b></span></span></a>
+      <a class="brand" href="#inicio" aria-label="Aprende y Avanza, inicio"><img class="brand-image" src="assets/aprende-y-avanza-identidad.png" alt="" width="56" height="56"><span>aprende<span>y avanza<b>.</b></span></span></a>
       <nav class="desktop-nav" aria-label="Navegación principal"><a href="#cursos">Cursos</a><a href="#grupos">Próximos grupos</a><a href="#experiencia">Cómo aprendemos</a><a href="#referencias">Referencias</a></nav>
       <a class="button primary header-cta" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
       <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-controls="mobile-nav" aria-expanded="false">☰</button>
@@ -32,14 +34,10 @@
     <nav id="mobile-nav" class="mobile-nav" aria-label="Navegación móvil" hidden><a href="#cursos">Cursos</a><a href="#grupos">Próximos grupos</a><a href="#experiencia">Cómo aprendemos</a><a href="#referencias">Referencias</a><a href="#contacto">Contacto</a></nav>
   </header>
   <main id="contenido">
+    <div class="brand-cover container"><img src="assets/aprende-y-avanza-portada.png" alt="Aprende y Avanza · Cursos en línea de Python, Excel, Power BI, SQL, R y Machine Learning. Clases en vivo, material de apoyo y certificado." width="2172" height="724" fetchpriority="high" decoding="async"></div>
     <section class="hero container" id="inicio">
       <div class="hero-copy"><p class="eyebrow"><span class="mini-star" aria-hidden="true">✳</span> TU ESPACIO PARA SEGUIR CRECIENDO</p><h1>Aprende hoy.<br> Abre nuevas<br> <span>posibilidades.</span></h1><p class="hero-description">De tu primera línea de código a ese proyecto que tienes en mente. Encuentra un curso, aprende en comunidad y da tu siguiente paso con nosotros.</p><div class="hero-actions"><a class="button primary large" href="#cursos">Explorar los cursos <span aria-hidden="true">↗</span></a><a class="hero-secondary" href="#referencias">Conoce nuestra comunidad <span aria-hidden="true">→</span></a></div><div class="hero-notes"><span><i>✓</i> Aprende desde cero</span><span><i>✓</i> A tu lado, en línea</span></div></div>
-      <div class="learning-art" aria-label="Python, datos y nuevas habilidades: un camino de aprendizaje">
-        <span class="art-label"><i></i> PEQUEÑOS PASOS. GRANDES CAMBIOS.</span><span class="hero-spark" aria-hidden="true">✳</span>
-        <div class="learning-window"><div class="window-bar"><div aria-hidden="true"><i></i><i></i><i></i></div><span>mi_siguiente_paso.py</span><span aria-hidden="true">↗</span></div><div class="code-content"><span class="code-comment"># Todo empieza con curiosidad</span><p><em>habilidades</em> = [<br> &nbsp; <b>"aprender"</b>,<br> &nbsp; <b>"practicar"</b>,<br> &nbsp; <b>"avanzar"</b><br> ]</p><p><strong>for</strong> paso <strong>in</strong> habilidades:<br> &nbsp; dar_el_siguiente(paso)</p><div class="code-output"><span aria-hidden="true">✓</span> Tu futuro tiene nuevas posibilidades<span class="cursor" aria-hidden="true">▌</span></div></div></div>
-        <div class="floating-project"><span class="project-mini-chart" aria-hidden="true"><i></i><i></i><i></i><i></i></span><div><small>LO QUE APRENDES, LO APLICAS</small><strong>De la idea al proyecto <span>↗</span></strong></div></div>
-        <div class="learning-tags" aria-hidden="true"><span>Python</span><span>Excel + Power BI</span><span>SQL</span><span>Y mucho más ↗</span></div>
-      </div>
+      <div class="brand-hero-art"><img src="assets/aprende-y-avanza-identidad.png" alt="Aprende y Avanza: un libro abierto, un birrete y una flecha que invita a seguir creciendo." width="1254" height="1254" decoding="async"><span class="brand-art-caption">Un paso a la vez. Siempre hacia adelante.</span></div>
     </section>
     <div class="subject-strip"><div class="container"><span>HABILIDADES QUE ABREN CAMINOS</span><strong>Programación</strong><i>✳</i><strong>Análisis de datos</strong><i>✳</i><strong>Herramientas digitales</strong></div></div>
     <section class="section catalog-section" id="cursos"><div class="container">
@@ -57,7 +55,7 @@
     <section class="section faq-section container" id="preguntas"><div><p class="eyebrow">ANTES DE DAR EL PASO</p><h2>Resolvamos<br> tus dudas.</h2><a class="text-button" data-wa="Hola, tengo una duda sobre los cursos de Aprende y Avanza.">Hablemos por WhatsApp ↗</a></div><div class="faq-list"><details><summary>¿Necesito conocimientos previos?<span>+</span></summary><p>Tenemos cursos desde cero. En cada ficha puedes revisar el enfoque y los requisitos; si tienes dudas, te ayudamos a elegir según tu experiencia.</p></details><details><summary>¿Cómo me inscribo?<span>+</span></summary><p>Elige tu curso y escríbenos por WhatsApp. Te compartiremos disponibilidad, fechas, precio e indicaciones para confirmar tu inscripción y recibir los accesos.</p></details><details><summary>¿Dónde veo las fechas y los precios?<span>+</span></summary><p>Las convocatorias confirmadas aparecen en Próximos grupos y en la ficha de cada curso. Si aún no hay una fecha publicada, consúltanos por WhatsApp. Los temarios de septiembre conservan la información de esa edición.</p></details><details><summary>¿Las clases son en línea?<span>+</span></summary><p>Sí. Los programas disponibles contemplan clases por Google Meet, materiales en Classroom y grabaciones en Drive. Confirma los recursos y el tiempo de acceso incluidos en el grupo al que te inscribas.</p></details><details><summary>¿Recibiré un certificado?<span>+</span></summary><p>Los cinco programas con temario descargable incluyen un certificado digital de participación al completar el curso. Consulta las condiciones de tu edición; no se anuncia una acreditación oficial.</p></details></div></section>
     <section class="contact-section" id="contacto"><div class="container contact-grid"><div class="contact-copy"><p class="eyebrow">TU SIGUIENTE PASO EMPIEZA CON UN HOLA</p><h2>¿Qué te gustaría<br> aprender <span>ahora?</span></h2><p>Cuéntanos qué tienes en mente. Te ayudamos a encontrar un curso y a resolver tus dudas sobre inscripciones.</p><a class="contact-phone" href="https://wa.me/525525734814" target="_blank" rel="noopener noreferrer"><small>ESCRÍBENOS POR WHATSAPP</small>55 2573 4814 <span aria-hidden="true">↗</span></a><div class="contact-social"><a data-social="facebook">Facebook ↗</a><a data-social="instagram">Instagram ↗</a></div></div><form id="contact-form" class="contact-form"><h3>Vamos a conocernos.</h3><label for="contact-name">Tu nombre <span>(opcional)</span></label><input id="contact-name" name="name" autocomplete="given-name" maxlength="80" placeholder="¿Cómo te llamas?"><label for="contact-course">¿Qué curso te interesa?</label><select id="contact-course" name="course"><option value="">Ayúdame a elegir</option></select><label for="contact-message">Cuéntanos un poco más <span>(opcional)</span></label><textarea id="contact-message" name="message" rows="3" maxlength="1200" placeholder="Tu objetivo, tus horarios o alguna duda..."></textarea><button class="button primary large" type="submit">Continuar en WhatsApp <span aria-hidden="true">↗</span></button><p class="form-note">Se abrirá WhatsApp con tu mensaje preparado. Tú lo revisas y lo envías; este formulario no confirma una inscripción.</p><p id="form-status" class="form-status" role="status" hidden></p></form></div></section>
   </main>
-  <footer class="site-footer container"><div class="footer-top"><a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>aprende<span>y avanza<b>.</b></span></span></a><p>Un paso a la vez.<br> Una nueva posibilidad cada día.</p><nav aria-label="Navegación de pie de página"><a href="#cursos">Cursos</a><a href="#referencias">Referencias</a><a href="#preguntas">Preguntas frecuentes</a><a href="#contacto">Contacto</a></nav></div><div class="footer-bottom"><span>© <span id="current-year">2026</span> Aprende y Avanza.</span><button id="privacy-button">Privacidad</button><a href="#inicio">Volver arriba ↑</a></div></footer>
+  <footer class="site-footer container"><div class="footer-top"><a class="brand" href="#inicio"><img class="brand-image" src="assets/aprende-y-avanza-identidad.png" alt="" width="56" height="56"><span>aprende<span>y avanza<b>.</b></span></span></a><p>Un paso a la vez.<br> Una nueva posibilidad cada día.</p><nav aria-label="Navegación de pie de página"><a href="#cursos">Cursos</a><a href="#referencias">Referencias</a><a href="#preguntas">Preguntas frecuentes</a><a href="#contacto">Contacto</a></nav></div><div class="footer-bottom"><span>© <span id="current-year">2026</span> Aprende y Avanza.</span><button id="privacy-button">Privacidad</button><a href="#inicio">Volver arriba ↑</a></div></footer>
   <dialog id="course-dialog" class="course-dialog" aria-labelledby="course-dialog-title"><button class="dialog-close" data-close aria-label="Cerrar detalles del curso">×</button><div id="course-detail"></div></dialog>
   <dialog id="privacy-dialog" class="privacy-dialog" aria-labelledby="privacy-title"><button class="dialog-close" data-close aria-label="Cerrar privacidad">×</button><h2 id="privacy-title">Tu información</h2><p>Los campos del formulario se usan en este navegador para preparar tu mensaje. Este sitio no almacena ni envía esos datos a una base de datos.</p><p>Al continuar, abrirás WhatsApp, donde puedes revisar y enviar el mensaje. Tus conversaciones e inscripciones se gestionan directamente con Aprende y Avanza a través del 55 2573 4814.</p><p>Los enlaces a WhatsApp, Facebook e Instagram y las tipografías de Google utilizan servicios externos con sus propias políticas de privacidad.</p></dialog>
 </body>
