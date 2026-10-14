@@ -1,0 +1,65 @@
+/* Cursos y comunidad · octubre–noviembre de 2026 */
+.course-art.has-image { height: 230px; padding: 0; background: #fff; }
+.course-illustration { display: block; width: 100%; height: 100%; object-fit: contain; }
+.course-content > .course-level { min-height: 0; color: var(--ink); font-size: 12px; font-weight: 650; margin-top: 16px; }
+.course-level span { display: block; color: var(--muted); font-weight: 400; margin-top: 3px; }
+.detail-facts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.detail-facts > span { background: var(--lilac-light); padding: 7px 12px; border-radius: 6px; font-size: 12px; line-height: 1.5; }
+.detail-columns > *, .payment-layout > * { min-width: 0; }
+.detail-columns { overflow-wrap: anywhere; }
+.detail-aside h3:not(:first-child) { margin-top: 28px; }
+.detail-aside li { font-size: 12px; }
+.detail-aside strong { display: block; margin-top: 8px; }
+.previous-program { display: block; text-decoration: underline; font-size: 12px; margin-top: 10px; }
+.course-tools { margin-top: 18px; }
+.modules summary { justify-content: flex-start; }
+.modules summary > span:last-child { margin-left: auto; }
+.modules summary > .module-number { font-size: 11px; font-weight: 700; color: var(--blue); transform: none; }
+.module-description { margin-top: 14px; color: var(--muted); }
+.lesson-practice { padding: 10px 12px; background: var(--mint-light); border-left: 2px solid #659477; border-radius: 0 5px 5px 0; }
+.deliverables-title { margin-top: 18px; font-size: 14px; }
+.payments-section { background: #fff1b9; border-block: 1px solid #eadb9c; }
+.payment-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: start; }
+.payment-intro { margin: 24px 0; font-size: 15px; }
+.payment-layout h3 { font-size: 18px; }
+.payment-methods { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0; }
+.payment-methods li { display: flex; gap: 12px; align-items: center; background: #fffdf7b3; border: 1px solid #e5d599; padding: 15px; border-radius: 8px; font-size: 13px; font-weight: 650; }
+.payment-methods li span { font-size: 10px; color: #776438; }
+.registration-card { background: var(--cream); border: 1px solid #e9d79d; border-radius: 14px; padding: 32px; }
+.registration-steps { list-style: none; padding: 0; counter-reset: registration; }
+.registration-steps li { position: relative; counter-increment: registration; padding-left: 42px; margin-bottom: 24px; }
+.registration-steps li::before { content: counter(registration); position: absolute; left: 0; top: 0; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--lilac-light); color: var(--blue); font-size: 12px; font-weight: 700; }
+.registration-steps p { font-size: 13px; color: var(--muted); margin-top: 8px; }
+.registration-card .button { width: 100%; }
+.registration-card > .small { font-size: 11px; margin-top: 15px; }
+.references-grid { grid-template-columns: 1fr; }
+.references-list { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; }
+.quote-card blockquote { font-size: 16px; line-height: 1.75; letter-spacing: -.015em; font-weight: 500; margin-bottom: 24px; }
+.quote-card figcaption { font-size: 12px; font-weight: 700; }
+.quote-card figcaption small { font-weight: 400; margin-top: 5px; }
+.community-card { padding: 28px; }
+.community-star { float: right; margin: 0; }
+.community-card h3 br { display: none; }
+.community-card .eyebrow { font-size: 9px; }
+.community-card p:not(.eyebrow) { font-size: 13px; }
+.reference-captures { margin-top: 24px; border-block: 1px solid #e4cbd9; padding: 20px 0; }
+.capture-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; margin-top: 22px; }
+.capture-grid img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; }
+.capture-grid a > span { display: block; margin-top: 10px; font-size: 12px; color: var(--blue); }
+.faq-list a { text-decoration: underline; }
+@media(max-width:1100px) { .payment-layout { gap: 35px; } }
+@media(max-width:900px) { .references-list { grid-template-columns: 1fr 1fr; } .payment-layout { grid-template-columns: 1fr; } }
+@media(max-width:600px) {
+  .course-art.has-image { height: 220px; }
+  .references-list, .capture-grid { grid-template-columns: 1fr; }
+  .quote-card blockquote { font-size: 17px; }
+  .payment-intro { font-size: 14px; }
+  .payment-methods { grid-template-columns: 1fr; }
+  .registration-card { padding: 24px 20px; }
+  .registration-steps li { padding-left: 38px; }
+  .detail-facts { gap: 6px; }
+  .detail-facts > span { font-size: 11px; padding: 6px 9px; }
+}
+
+.aside-details { border-top: 1px solid #dfccec; padding-top: 16px; margin-top: 20px; }
+.aside-details summary { font-size: 14px; }

@@ -1,4 +1,4 @@
-/* Contenido basado en los cinco temarios PDF de Aprende y Avanza. */
+/* Programas actualizados con los temarios de octubre y noviembre de 2026. SQL y LaTeX conservan su programa de septiembre. */
 window.COURSE_DATA = {
   "brand": "Aprende y Avanza",
   "whatsappUrl": "https://wa.me/525525734814",
@@ -14,7 +14,7 @@ window.COURSE_DATA = {
       "Tarjeta de crédito"
     ],
     "durationWeeks": 4,
-    "level": "Desde cero",
+    "level": "Según los requisitos de cada curso",
     "modality": "En línea por Google Meet",
     "included": [
       "Clases en vivo por Google Meet",
@@ -39,192 +39,553 @@ window.COURSE_DATA = {
   },
   "courses": [
     {
-      "id": "excel-power-bi",
-      "title": "Excel + Power BI desde Cero",
-      "source": "01_excel_power_bi_temario_final.pdf",
-      "sourcePageCount": 5,
-      "startDate": "2026-09-26",
+      "id": "machine-learning",
+      "title": "Machine Learning con Python",
+      "shortTitle": "Machine Learning con Python",
+      "category": "desarrollo",
+      "categoryLabel": "Inteligencia artificial",
+      "theme": "ml",
+      "tags": [
+        "Scikit-learn",
+        "XGBoost",
+        "PyTorch",
+        "Streamlit"
+      ],
+      "level": "Básico–intermedio · requiere Python básico",
+      "startDate": "2026-11-09",
+      "startTime": "20:00",
+      "endTime": "21:00",
       "days": [
-        "sábado",
-        "domingo"
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes"
       ],
-      "startTime": "09:00",
-      "endTime": "12:00",
-      "hours": 24,
-      "sessions": 8,
-      "sessionHours": 3,
-      "description": "Curso práctico para aprender a trabajar con datos desde Excel y llevarlos hasta dashboards interactivos en Power BI. Se inicia con organización de información, fórmulas, funciones, tablas y análisis en Excel; después se trabaja con Power Query, modelado de datos, medidas DAX y visualizaciones en Power BI. El enfoque es aplicado: cada herramienta se usa sobre archivos y casos similares a los que aparecen en áreas administrativas, ventas, finanzas, operaciones y análisis de datos.",
-      "objective": "Al finalizar, el alumno podrá organizar y analizar bases de datos en Excel, automatizar cálculos con funciones, construir tablas dinámicas, limpiar información con Power Query, relacionar tablas en Power BI, crear medidas básicas con DAX y desarrollar un dashboard funcional con indicadores, filtros y visualizaciones claras.",
+      "hours": 20,
+      "sessions": 20,
+      "sessionHours": 1,
+      "price": 349,
+      "summary": "Convierte datos en predicciones: prepara información, compara modelos y evalúa sus resultados. Termina con un proyecto reproducible y un prototipo guiado en Streamlit.",
+      "audience": "Para quienes ya conocen variables, condicionales, funciones y estructuras básicas de Python y quieren iniciarse en aprendizaje automático. Comenzamos desde los fundamentos de Machine Learning; se recomienda noción de tablas, gráficas y estadística descriptiva.",
+      "source": "temario_ml_aprende_y_avanza_2026.pdf",
+      "sourcePageCount": 7,
+      "pdf": "temarios/temario_ml_aprende_y_avanza_2026.pdf",
+      "image": "assets/curso-ml-2026.png",
+      "programEdition": "Noviembre 2026",
+      "isCurrentProgram": true,
+      "description": "Aprende el proceso de machine learning aplicado: preparar datos, entrenar y comparar modelos, medir resultados sin caer en errores de validación y mostrar predicciones en una aplicación sencilla. Incluye un primer acercamiento a XGBoost y redes neuronales con PyTorch.",
+      "objective": "Construir, evaluar y presentar modelos básicos de regresión, clasificación y agrupamiento con Python; utilizar pipelines, validación cruzada y buenas prácticas para interpretar resultados.",
+      "outcomes": [
+        "Preparar y explorar datos antes de entrenar modelos.",
+        "Separar datos correctamente y evitar fuga de información.",
+        "Entrenar algoritmos supervisados y comparar métricas.",
+        "Optimizar pipelines con validación cruzada.",
+        "Aplicar clustering y reducción de dimensiones inicial.",
+        "Presentar un prototipo predictivo con explicación y límites."
+      ],
+      "tools": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn",
+        "Scikit-learn",
+        "XGBoost",
+        "PyTorch",
+        "Streamlit"
+      ],
       "requirements": [
-        "Computadora o laptop con conexión a internet.",
-        "Microsoft Excel. Se recomienda Microsoft 365 o Excel 2021/2024 para aprovechar funciones recientes.",
-        "Power BI Desktop instalado en Windows para las sesiones de Power BI.",
-        "Cuenta de Google para Google Classroom y Google Drive.",
-        "No se requieren conocimientos previos de Excel avanzado ni Power BI."
+        "Conocer variables, condicionales, funciones y estructuras básicas de Python.",
+        "Computadora con internet y VS Code/Jupyter o Google Colab.",
+        "Se recomienda noción básica de tablas, gráficas y estadística descriptiva."
       ],
+      "scopeNote": "Los temas avanzados se presentan mediante ejemplos introductorios y recursos para profundizar. La profundidad se adapta a las horas del curso; los temas complementarios son un panorama para continuar aprendiendo.",
       "modules": [
         {
-          "title": "Módulo 1: Fundamentos y análisis en Excel",
+          "title": "Fundamentos y preparación de datos",
+          "description": "Comprender el ciclo de un modelo antes de entrenarlo.",
           "lessons": [
             {
-              "title": "Sesión 1. Excel bien estructurado: entorno, datos y referencias",
+              "title": "Clase 01. Qué es realmente machine learning",
               "topics": [
-                "Recorrido por libros, hojas, filas, columnas, rangos y barra de fórmulas.",
-                "Tipos de datos: texto, números, fechas, porcentajes y valores lógicos.",
-                "Formato de celdas y criterios para mantener una base limpia y consistente.",
-                "Referencias relativas, absolutas y mixtas: A1, $A$1, A$1 y $A1.",
-                "Operaciones básicas y orden correcto de las fórmulas.",
-                "Buenas prácticas para capturar datos: una fila por registro y una columna por variable.",
-                "Conversión de rangos en tablas de Excel y ventajas de trabajar con datos estructurados.",
-                "Práctica: preparar una base de ventas lista para análisis."
-              ]
+                "Aprendizaje supervisado y no supervisado",
+                "regresión, clasificación y clustering",
+                "IA vs ML vs deep learning",
+                "etapas de proyecto y casos de uso",
+                "errores frecuentes y límites del modelo."
+              ],
+              "practice": "Definir el problema y la variable objetivo de un caso real."
             },
             {
-              "title": "Sesión 2. Fórmulas y funciones fundamentales",
+              "title": "Clase 02. Python para datos y bibliotecas clave",
               "topics": [
-                "SUMA, PROMEDIO, MIN, MAX, CONTAR y CONTARA.",
-                "REDONDEAR y cálculo de porcentajes, variaciones y participación.",
-                "Uso de referencias absolutas para tasas, metas y parámetros.",
-                "Funciones de fecha básicas: HOY, AÑO, MES y DÍA.",
-                "Funciones de texto útiles: IZQUIERDA, DERECHA, EXTRAE y CONCAT/TEXTJOIN.",
-                "Detección de errores comunes en fórmulas y lectura de resultados.",
-                "Práctica: construir indicadores de ventas, metas y crecimiento."
-              ]
+                "NumPy y Pandas: lectura, selección y tipos",
+                "nociones de Jupyter/Colab",
+                "objetos train/target",
+                "visualización con Matplotlib y Seaborn",
+                "scikit-learn y su interfaz fit/predict."
+              ],
+              "practice": "Preparar un notebook de trabajo con dataset documentado."
+            },
+            {
+              "title": "Clase 03. EDA y limpieza orientadas al modelado",
+              "topics": [
+                "Estadística rápida",
+                "distribuciones y correlaciones",
+                "valores faltantes y duplicados",
+                "detección de outliers",
+                "manejo de categorías",
+                "decisiones de limpieza y sesgos."
+              ],
+              "practice": "Crear un informe exploratorio para elegir variables."
+            },
+            {
+              "title": "Clase 04. Preprocesamiento sin fuga de datos",
+              "topics": [
+                "train_test_split",
+                "entrenamiento, validación y prueba",
+                "StandardScaler y OneHotEncoder",
+                "imputación",
+                "Data leakage",
+                "reproducibilidad con random_state",
+                "transformaciones por columnas."
+              ],
+              "practice": "Separar un dataset y construir transformaciones seguras."
+            },
+            {
+              "title": "Clase 05. Primer modelo y línea base",
+              "topics": [
+                "DummyRegressor/DummyClassifier",
+                "fit, predict y score",
+                "baseline y métricas",
+                "sobreajuste vs subajuste",
+                "interpretación de resultados",
+                "registro de experimentos sencillo."
+              ],
+              "practice": "Entrenar un baseline y justificar si mejora el punto de partida."
             }
           ]
         },
         {
-          "title": "Módulo 2: Funciones para análisis y dashboards en Excel",
+          "title": "Predicción supervisada con Python",
+          "description": "Aprender algoritmos esenciales de regresión y clasificación.",
           "lessons": [
             {
-              "title": "Sesión 3. Lógica, criterios y validación de información",
+              "title": "Clase 06. Regresión lineal y evaluación",
               "topics": [
-                "Función SI y construcción de reglas de clasificación.",
-                "Funciones Y y O dentro de condiciones.",
-                "SI.ERROR para manejar resultados no válidos.",
-                "SUMAR.SI y SUMAR.SI.CONJUNTO.",
-                "CONTAR.SI y CONTAR.SI.CONJUNTO.",
-                "PROMEDIO.SI y PROMEDIO.SI.CONJUNTO.",
-                "Validación de datos mediante listas desplegables.",
-                "Formato condicional para identificar metas, alertas, duplicados y valores críticos.",
-                "Práctica: semáforo de desempeño por vendedor o sucursal."
-              ]
+                "LinearRegression",
+                "variables y coeficientes",
+                "predicciones continuas",
+                "MAE, MSE y RMSE",
+                "R²",
+                "evaluación en datos no vistos y residuos."
+              ],
+              "practice": "Predecir una variable numérica y analizar el error."
             },
             {
-              "title": "Sesión 4. Búsquedas, filtros y análisis dinámico",
+              "title": "Clase 07. Regresión regularizada y características",
               "topics": [
-                "BUSCARX para recuperar información entre tablas.",
-                "Alternativa con INDICE y COINCIDIR para comprender búsquedas flexibles.",
-                "Ordenar, filtrar y quitar duplicados.",
-                "Tablas dinámicas: campos, filas, columnas, valores y filtros.",
-                "Agrupar fechas por mes, trimestre y año.",
-                "Segmentadores y líneas de tiempo.",
-                "Gráficos dinámicos y selección del tipo de gráfico adecuado.",
-                "Práctica: tablero ejecutivo sencillo en Excel."
-              ]
+                "Ridge y Lasso (intuición)",
+                "escalamiento",
+                "sesgo-varianza",
+                "variables relevantes",
+                "importancia del preprocesamiento",
+                "comparación de modelos sencillos."
+              ],
+              "practice": "Comparar regresión lineal frente a regularización."
+            },
+            {
+              "title": "Clase 08. Clasificación y regresión logística",
+              "topics": [
+                "LogisticRegression",
+                "probabilidades",
+                "umbrales",
+                "clasificación binaria",
+                "matriz de confusión",
+                "exactitud, precisión, recall y F1",
+                "clases desbalanceadas."
+              ],
+              "practice": "Entrenar un clasificador y explicar sus errores."
+            },
+            {
+              "title": "Clase 09. Árboles y Random Forest",
+              "topics": [
+                "DecisionTreeClassifier/Regressor",
+                "reglas interpretables",
+                "profundidad, hojas y overfitting",
+                "RandomForest",
+                "importancia de variables (con precauciones)",
+                "comparación entre algoritmos."
+              ],
+              "practice": "Construir un árbol y un bosque aleatorio sobre el mismo caso."
+            },
+            {
+              "title": "Clase 10. KNN y máquinas de vectores soporte",
+              "topics": [
+                "KNeighbors",
+                "distancia y sensibilidad al escalamiento",
+                "noción de SVM",
+                "ventajas y límites de cada método",
+                "selección según tipo/tamaño de datos",
+                "evaluación comparable."
+              ],
+              "practice": "Medir el desempeño de tres modelos de clasificación."
             }
           ]
         },
         {
-          "title": "Módulo 3: Power Query y modelo de datos en Power BI",
+          "title": "Validación, optimización e interpretación",
+          "description": "Evitar que un modelo parezca mejor de lo que realmente es.",
           "lessons": [
             {
-              "title": "Sesión 5. Preparación y limpieza de datos con Power Query",
+              "title": "Clase 11. Cross-validation y resultados confiables",
               "topics": [
-                "Qué es Power Query y por qué evita limpieza manual repetitiva.",
-                "Importación de archivos Excel y CSV.",
-                "Cambio correcto de tipos de datos.",
-                "Eliminar columnas, filas vacías, errores y duplicados.",
-                "Dividir y combinar columnas.",
-                "Reemplazar valores y estandarizar categorías.",
-                "Anexar consultas y combinar tablas mediante claves.",
-                "Carga de resultados en Excel o en el modelo de Power BI.",
-                "Práctica: transformar una base desordenada en una tabla lista para análisis."
-              ]
+                "KFold/StratifiedKFold",
+                "cross_val_score",
+                "varianza entre pliegues",
+                "evitar usar test para ajustar",
+                "métricas según el objetivo",
+                "clasificación estratificada."
+              ],
+              "practice": "Comparar modelos con validación cruzada."
             },
             {
-              "title": "Sesión 6. Power BI Desktop y modelado de datos",
+              "title": "Clase 12. Pipelines reutilizables",
               "topics": [
-                "Entorno de Power BI Desktop: vistas de informe, datos y modelo.",
-                "Importación desde Excel/CSV y conexión con Power Query.",
-                "Diferencia entre tabla de hechos y tablas de dimensiones.",
-                "Relaciones uno a muchos y dirección de filtros.",
-                "Concepto de modelo estrella a nivel introductorio.",
-                "Creación de una tabla calendario básica.",
-                "Columnas calculadas vs. medidas: cuándo usar cada una.",
-                "Práctica: construir un modelo de ventas con productos, clientes y fechas."
-              ]
+                "Pipeline y ColumnTransformer",
+                "imputación y escalado por tipo",
+                "one-hot encoding",
+                "fit_transform vs transform",
+                "prevenir leakage",
+                "guardar configuraciones."
+              ],
+              "practice": "Crear un pipeline completo desde datos crudos."
+            },
+            {
+              "title": "Clase 13. Optimización de hiperparámetros",
+              "topics": [
+                "Parámetro frente a hiperparámetro",
+                "GridSearchCV y RandomizedSearchCV",
+                "espacios de búsqueda",
+                "overfitting de validación",
+                "tiempo de cómputo",
+                "comparación final en test."
+              ],
+              "practice": "Ajustar un modelo con una búsqueda acotada."
+            },
+            {
+              "title": "Clase 14. Métricas avanzadas y desbalance",
+              "topics": [
+                "Curvas ROC y precisión-recall",
+                "AUC",
+                "validación estratificada",
+                "pesos de clase",
+                "sensibilidad/especificidad",
+                "calibración conceptual",
+                "umbral según costo del error."
+              ],
+              "practice": "Elegir una métrica apropiada para un caso desbalanceado."
+            },
+            {
+              "title": "Clase 15. Interpretabilidad y ML responsable",
+              "topics": [
+                "Coeficientes e importancia por permutación",
+                "visualización del error",
+                "sesgo en datos",
+                "fairness, privacidad y generalización",
+                "uso básico de permutation_importance",
+                "reportes transparentes."
+              ],
+              "practice": "Explicar qué influye en un modelo y qué no puede asegurar."
             }
           ]
         },
         {
-          "title": "Módulo 4: DAX, visualización y proyecto final",
+          "title": "Técnicas modernas y aplicación final",
+          "description": "Explorar herramientas actuales y presentar un producto útil.",
           "lessons": [
             {
-              "title": "Sesión 7. Medidas DAX e indicadores de negocio",
+              "title": "Clase 16. Clustering y reducción de dimensión",
               "topics": [
-                "Qué es DAX y cómo se evalúan las medidas.",
-                "SUM, COUNT, COUNTA y DISTINCTCOUNT.",
-                "DIVIDE para porcentajes y razones seguras.",
-                "CALCULATE como base para modificar contexto de filtros.",
-                "Indicadores de ventas, utilidad, ticket promedio y cumplimiento de meta.",
-                "Formatos de moneda, porcentaje y unidades.",
-                "Tarjetas, KPI, tablas y matrices.",
-                "Práctica: crear un panel de métricas reutilizables."
-              ]
+                "KMeans",
+                "escalamiento de variables",
+                "selección inicial de K",
+                "silhouette score (visión práctica)",
+                "PCA",
+                "visualización de agrupaciones",
+                "diferencia entre explorar y predecir."
+              ],
+              "practice": "Segmentar clientes o productos y describir grupos."
             },
             {
-              "title": "Sesión 8. Dashboard final en Power BI",
+              "title": "Clase 17. Gradient boosting con XGBoost",
               "topics": [
-                "Gráficos de barras, líneas, áreas, dona, tablas y matrices.",
-                "Segmentadores y filtros de página, visual e informe.",
-                "Interacciones entre visualizaciones.",
-                "Uso de títulos, etiquetas, tooltips y jerarquía visual.",
-                "Principios básicos de diseño: consistencia, contraste y lectura rápida.",
-                "Construcción guiada del dashboard final.",
-                "Revisión de métricas, filtros y comportamiento del modelo.",
-                "Presentación del proyecto y recomendaciones para portafolio."
-              ]
+                "Boosting vs bagging",
+                "idea de ensambles secuenciales",
+                "XGBClassifier/Regressor a nivel introductorio",
+                "árboles y regularización",
+                "comparación con Random Forest",
+                "selección de un baseline sólido."
+              ],
+              "practice": "Entrenar una demostración de XGBoost y comparar métricas."
+            },
+            {
+              "title": "Clase 18. Primer contacto con PyTorch",
+              "topics": [
+                "Tensores y operaciones",
+                "intuición de red neuronal",
+                "capas, activaciones y pérdida",
+                "entrenamiento en ejemplo guiado",
+                "diferencia entre scikit-learn y deep learning",
+                "cuándo usar GPU."
+              ],
+              "practice": "Ejecutar y modificar un notebook guiado de red neuronal pequeña."
+            },
+            {
+              "title": "Clase 19. De notebook a aplicación con Streamlit",
+              "topics": [
+                "Guardar modelos con joblib",
+                "cargar pipeline",
+                "interfaz con Streamlit",
+                "campos de entrada, predicción y advertencias",
+                "privacidad de datos",
+                "presentación de un prototipo local."
+              ],
+              "practice": "Construir una interfaz sencilla que muestre una predicción."
+            },
+            {
+              "title": "Clase 20. Proyecto integrador y evaluación final",
+              "topics": [
+                "Definición de problema",
+                "preparación",
+                "train/test y baseline",
+                "entrenamiento y comparación",
+                "interpretación",
+                "conclusiones",
+                "demostración del prototipo y recomendaciones de",
+                "portafolio."
+              ],
+              "practice": "Presentar un proyecto reproducible de machine learning."
             }
           ]
         }
       ],
       "project": {
-        "title": "Dashboard ejecutivo de análisis",
-        "description": "El alumno desarrollará un dashboard a partir de una base de datos de ventas, operaciones, recursos humanos o finanzas. Deberá limpiar la información, modelar las tablas, crear medidas y construir una vista ejecutiva que permita responder preguntas reales.",
+        "title": "Proyecto predictivo de principio a fin",
+        "description": "Elegirás un caso práctico de predicción o clasificación. Construirás un notebook reproducible que va desde la exploración y el preprocesamiento hasta la evaluación y presentación de un modelo.",
         "deliverables": [
-          "Base de datos organizada y documentada.",
-          "Proceso de limpieza reproducible con Power Query.",
-          "Modelo de datos con relaciones correctas.",
-          "Al menos 5 indicadores o medidas relevantes.",
-          "Filtros o segmentadores para explorar la información.",
-          "Visualizaciones coherentes con el objetivo del análisis.",
-          "Una página final de dashboard clara y presentable.",
-          "Breve explicación de hallazgos y decisiones de diseño."
-        ],
-        "outcomes": [
-          "Trabajar con bases de datos de forma ordenada en Excel.",
-          "Construir análisis con fórmulas, criterios y búsquedas.",
-          "Crear tablas y gráficos dinámicos.",
-          "Limpiar información con Power Query.",
-          "Crear modelos y medidas básicas en Power BI.",
-          "Diseñar dashboards listos para presentar."
+          "Notebook de Python con pregunta, dataset y análisis exploratorio.",
+          "Pipeline de limpieza, entrenamiento y división train/test correcta.",
+          "Modelo baseline y al menos dos algoritmos comparados.",
+          "Métricas pertinentes y breve justificación del modelo elegido.",
+          "Gráficos para interpretar resultados, errores y limitaciones.",
+          "Archivo del modelo y prototipo básico en Streamlit (demostración guiada)."
         ]
       },
-      "theme": "excel",
+      "complementaryTopics": [
+        "Panorama de NLP con Transformers y modelos de Hugging Face.",
+        "Introducción conceptual a visión por computadora con PyTorch.",
+        "Ruta de aprendizaje para MLOps, experiment tracking y despliegue real."
+      ]
+    },
+    {
+      "id": "excel-power-bi",
+      "title": "Excel + Power BI desde cero",
       "shortTitle": "Excel + Power BI",
       "category": "datos",
       "categoryLabel": "Análisis de datos",
-      "tagline": "Convierte tus datos en decisiones",
-      "summary": "Organiza y analiza datos en Excel, limpia información con Power Query y crea un dashboard interactivo en Power BI.",
+      "theme": "excel",
       "tags": [
         "Excel",
         "Power Query",
-        "Power BI"
+        "Power BI",
+        "DAX"
       ],
-      "icon": "chart",
-      "pdf": "temarios/excel-power-bi.pdf",
-      "audience": "Para quienes quieren analizar información de ventas, finanzas, operaciones o administración desde cero."
+      "level": "Desde cero",
+      "startDate": "2026-10-31",
+      "startTime": "09:00",
+      "endTime": "12:00",
+      "days": [
+        "sábado",
+        "domingo"
+      ],
+      "hours": 24,
+      "sessions": 8,
+      "sessionHours": 3,
+      "price": 299,
+      "summary": "De tus primeras hojas de cálculo a un dashboard ejecutivo: organiza datos, domina fórmulas y tablas dinámicas, y crea indicadores con Power Query, Power BI y DAX.",
+      "audience": "Para estudiantes y personas que trabajan con información de ventas, administración, finanzas u operaciones. Empiezas por las bases de Excel y avanzas hacia tableros interactivos.",
+      "source": "temario_excel_aprende_y_avanza_2026.pdf",
+      "sourcePageCount": 7,
+      "pdf": "temarios/temario_excel_aprende_y_avanza_2026.pdf",
+      "image": "assets/curso-excel-2026.png",
+      "programEdition": "Octubre–noviembre 2026",
+      "isCurrentProgram": true,
+      "description": "Domina un flujo de análisis de datos completo: organiza información en Excel, utiliza funciones y tablas dinámicas, transforma archivos con Power Query y crea dashboards interactivos con Power BI y medidas DAX. Todo con ejemplos de ventas, finanzas y operaciones.",
+      "objective": "Analizar y limpiar datos en Excel, crear modelos confiables en Power BI, calcular indicadores con DAX y construir un tablero ejecutivo que responda preguntas de negocio.",
+      "outcomes": [
+        "Diseñar archivos y tablas de Excel listos para análisis.",
+        "Utilizar funciones de búsqueda, criterios y matrices dinámicas.",
+        "Crear tablas dinámicas, gráficos y segmentadores.",
+        "Preparar y combinar archivos con Power Query.",
+        "Relacionar tablas e implementar medidas DAX útiles.",
+        "Entregar un dashboard visual, filtrable y documentado."
+      ],
+      "tools": [
+        "Microsoft Excel",
+        "Power Query",
+        "Tablas dinámicas",
+        "Power BI Desktop",
+        "DAX",
+        "Power Pivot"
+      ],
+      "requirements": [
+        "Laptop o computadora con internet y Excel; se recomienda Microsoft 365 o Excel 2021/2024.",
+        "Power BI Desktop instalado en Windows para las prácticas; cuenta de Google.",
+        "No se requieren conocimientos previos de Power BI ni Excel avanzado."
+      ],
+      "scopeNote": "Los temas avanzados se presentan mediante ejemplos introductorios y recursos para profundizar. La profundidad se adapta a las horas del curso; los temas complementarios son un panorama para continuar aprendiendo.",
+      "modules": [
+        {
+          "title": "Excel: fundamentos y productividad",
+          "description": "Preparar hojas limpias, fórmulas robustas y análisis repetibles.",
+          "lessons": [
+            {
+              "title": "Sesión 01. Excel profesional desde la base",
+              "topics": [
+                "Libros, hojas, rangos y tipos de dato",
+                "formatos y estructura tabular",
+                "referencias relativas/absolutas",
+                "tablas estructuradas",
+                "filtros, quitar duplicados y validaciones",
+                "errores frecuentes de captura."
+              ],
+              "practice": "Convertir datos desordenados en una tabla maestra utilizable."
+            },
+            {
+              "title": "Sesión 02. Fórmulas y funciones de alto valor",
+              "topics": [
+                "SUMA, PROMEDIO, CONTAR y SI",
+                "SI.ERROR, Y/O",
+                "SUMAR.SI.CONJUNTO y CONTAR.SI.CONJUNTO",
+                "fechas y texto",
+                "BUSCARX e INDICE+COINCIDIR",
+                "introducción a FILTRAR y UNICOS según versión."
+              ],
+              "practice": "Construir una hoja de indicadores y búsquedas entre tablas."
+            }
+          ]
+        },
+        {
+          "title": "Excel: análisis y automatización visual",
+          "description": "Presentar información y reducir tareas manuales.",
+          "lessons": [
+            {
+              "title": "Sesión 03. Calidad de datos y análisis avanzado",
+              "topics": [
+                "Formato condicional con reglas",
+                "listas desplegables",
+                "detectar errores y duplicados",
+                "segmentación de registros",
+                "cálculo de crecimientos, metas y variaciones",
+                "funciones LET y matrices dinámicas como demostración."
+              ],
+              "practice": "Crear un semáforo automático de cumplimiento por vendedor."
+            },
+            {
+              "title": "Sesión 04. Tablas dinámicas y dashboards en Excel",
+              "topics": [
+                "Tablas dinámicas, jerarquías y agrupación de fechas",
+                "campos calculados introductorios",
+                "segmentadores y cronología",
+                "gráficos dinámicos",
+                "diseño de un mini-dashboard",
+                "preparación para importar a Power BI."
+              ],
+              "practice": "Entregar un tablero ejecutivo funcional dentro de Excel."
+            }
+          ]
+        },
+        {
+          "title": "Power Query y modelado en Power BI",
+          "description": "Limpiar y relacionar datos con un flujo reproducible.",
+          "lessons": [
+            {
+              "title": "Sesión 05. Power Query: transformar sin copiar/pegar",
+              "topics": [
+                "Obtener datos de CSV/Excel",
+                "cambiar tipos, encabezados y columnas",
+                "dividir, reemplazar, quitar errores y duplicados",
+                "anexar consultas",
+                "combinar tablas con Merge",
+                "introducción al lenguaje M."
+              ],
+              "practice": "Crear una consulta que consolide varios archivos de ventas."
+            },
+            {
+              "title": "Sesión 06. Power BI: modelo de datos y DAX esencial",
+              "topics": [
+                "Entorno de Power BI Desktop",
+                "Power Query y carga",
+                "tablas de hechos/dimensiones",
+                "relaciones uno a muchos y dirección de filtro",
+                "esquema estrella",
+                "columna calculada versus medida",
+                "SUM, COUNTROWS, DISTINCTCOUNT y DIVIDE."
+              ],
+              "practice": "Construir un modelo relacional y primeras métricas de negocio."
+            }
+          ]
+        },
+        {
+          "title": "DAX, visualización y dashboard final",
+          "description": "Transformar los datos en decisiones entendibles.",
+          "lessons": [
+            {
+              "title": "Sesión 07. Medidas DAX y análisis de indicadores",
+              "topics": [
+                "Contexto de filtro",
+                "CALCULATE y filtros",
+                "medidas de margen, ticket promedio y crecimiento",
+                "tablas calendario y noción de inteligencia de tiempo",
+                "KPI y tarjetas",
+                "validación de resultados y formato."
+              ],
+              "practice": "Crear medidas reutilizables para un reporte comercial."
+            },
+            {
+              "title": "Sesión 08. Dashboard final y comunicación",
+              "topics": [
+                "Barras, líneas, matrices, tarjetas y segmentadores",
+                "drill-down, tooltips e interacciones",
+                "diseño y accesibilidad",
+                "navegación sencilla",
+                "actualización de datos",
+                "panorama de publicación y permisos de Power BI Service."
+              ],
+              "practice": "Presentar un dashboard ejecutivo completo con conclusiones."
+            }
+          ]
+        }
+      ],
+      "project": {
+        "title": "Dashboard ejecutivo en Excel y Power BI",
+        "description": "Construirás un tablero de ventas, administración o finanzas: de datos sin limpiar a una página ejecutiva con métricas, filtros, visualizaciones y recomendaciones.",
+        "deliverables": [
+          "Base de Excel organizada, validada y con indicadores calculados.",
+          "Tablas y gráficos dinámicos para una vista preliminar.",
+          "Consultas de Power Query con pasos de limpieza reproducibles.",
+          "Modelo con relaciones coherentes y tabla de fechas si aplica.",
+          "Mínimo cinco medidas KPI y visualizaciones interactivas.",
+          "Archivo .pbix final con explicación de hallazgos y decisiones."
+        ]
+      },
+      "complementaryTopics": [
+        "Introducción a actualización de archivos y organización de fuentes de datos.",
+        "Panorama de publicación en Power BI Service y licenciamiento.",
+        "Próximos pasos: Power Pivot y automatización con Power Automate."
+      ]
     },
     {
       "id": "sql",
@@ -525,14 +886,27 @@ window.COURSE_DATA = {
       ],
       "icon": "db",
       "pdf": "temarios/sql.pdf",
-      "audience": "Para quienes quieren aprender a consultar y analizar bases de datos sin experiencia previa en programación."
+      "audience": "Para quienes quieren aprender a consultar y analizar bases de datos sin experiencia previa en programación.",
+      "programEdition": "Septiembre 2026",
+      "level": "Desde cero"
     },
     {
       "id": "git-github",
-      "title": "Git y GitHub desde Cero",
-      "source": "03_git_github_temario_v4.pdf",
-      "sourcePageCount": 7,
-      "startDate": "2026-09-28",
+      "title": "Git y GitHub desde cero",
+      "shortTitle": "Git y GitHub",
+      "category": "desarrollo",
+      "categoryLabel": "Programación y desarrollo",
+      "theme": "git",
+      "tags": [
+        "Git",
+        "GitHub",
+        "GitHub Actions",
+        "Portafolio"
+      ],
+      "level": "Desde cero · principiante a intermedio práctico",
+      "startDate": "2026-10-30",
+      "startTime": "18:00",
+      "endTime": "19:00",
       "days": [
         "lunes",
         "martes",
@@ -540,307 +914,315 @@ window.COURSE_DATA = {
         "jueves",
         "viernes"
       ],
-      "startTime": "17:00",
-      "endTime": "18:00",
       "hours": 20,
       "sessions": 20,
       "sessionHours": 1,
-      "description": "Curso práctico para aprender a controlar versiones de proyectos con Git y utilizar GitHub para almacenar repositorios, colaborar y construir un portafolio. Se inicia desde la terminal y los conceptos de commit, historial y ramas; después se trabaja con repositorios remotos, conflictos, pull requests, Issues, README y publicación de proyectos.",
-      "objective": "Al finalizar, el alumno podrá crear y administrar repositorios Git, registrar cambios mediante commits, trabajar con ramas, recuperar versiones, sincronizar proyectos con GitHub, resolver conflictos básicos y participar en un flujo colaborativo mediante forks y pull requests.",
-      "requirements": [
-        "Computadora o laptop con conexión a internet.",
-        "Cuenta gratuita de GitHub.",
-        "Git instalado en el equipo.",
-        "Visual Studio Code recomendado para las prácticas.",
-        "No se requiere experiencia previa con Git, GitHub o terminal."
+      "price": 299,
+      "summary": "Guarda el historial de tus proyectos, recupera cambios y aprende a colaborar con ramas y pull requests. Publica un repositorio documentado con una primera automatización.",
+      "audience": "Para quienes crean código, sitios o análisis de datos y quieren organizar sus versiones y colaborar en equipo. No necesitas experiencia previa con Git ni con la terminal.",
+      "source": "temario_git_aprende_y_avanza_2026.pdf",
+      "sourcePageCount": 7,
+      "pdf": "temarios/temario_git_aprende_y_avanza_2026.pdf",
+      "image": "assets/curso-git-2026.png",
+      "programEdition": "Octubre–noviembre 2026",
+      "isCurrentProgram": true,
+      "description": "Aprende a controlar versiones sin perder cambios, colaborar en proyectos reales y publicar un portafolio de código. Comenzamos con Git y la terminal; avanzamos hasta ramas, resolución de conflictos, revisiones de código y una primera automatización con GitHub Actions.",
+      "objective": "Gestionar repositorios locales y remotos con seguridad, trabajar mediante ramas y pull requests, documentar proyectos y presentar un repositorio profesional listo para compartir.",
+      "outcomes": [
+        "Crear y mantener repositorios de forma ordenada.",
+        "Registrar y comparar cambios con commits claros.",
+        "Resolver conflictos y recuperar versiones sin riesgos.",
+        "Colaborar mediante Issues, forks y pull requests.",
+        "Aplicar documentación, seguridad básica y versiones.",
+        "Publicar un proyecto y automatizar una verificación sencilla."
       ],
+      "tools": [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "Git Bash / terminal",
+        "Markdown",
+        "GitHub Actions",
+        "GitHub Pages"
+      ],
+      "requirements": [
+        "Computadora con Windows, macOS o Linux y acceso a internet.",
+        "Cuenta gratuita de GitHub; Git y Visual Studio Code instalados.",
+        "No necesitas experiencia previa con Git ni con la terminal."
+      ],
+      "scopeNote": "Los temas avanzados se presentan mediante ejemplos introductorios y recursos para profundizar. La profundidad se adapta a las horas del curso; los temas complementarios son un panorama para continuar aprendiendo.",
       "modules": [
         {
-          "title": "Semana 1: Fundamentos de Git y control de versiones",
+          "title": "Fundamentos y trabajo local",
+          "description": "Entender el historial del proyecto y registrar cambios sin perder información.",
           "lessons": [
             {
-              "title": "Día 1. Qué es Git, GitHub y el control de versiones",
+              "title": "Clase 01. Git y GitHub: el mapa completo",
               "topics": [
-                "Problemas de trabajar con archivos proyecto_final_v2_ahora_si.",
-                "Qué es un sistema de control de versiones.",
-                "Diferencia entre Git y GitHub.",
-                "Repositorio local y repositorio remoto.",
-                "Conceptos de snapshot, commit e historial.",
-                "Casos de uso en programación, datos, documentación y trabajo en equipo.",
-                "Preparación del entorno del curso."
-              ]
+                "Control de versiones y snapshots",
+                "repositorio local frente a remoto",
+                "commit, árbol de trabajo y staging",
+                "usos en Python, ciencia de datos y equipos",
+                "configuración del entorno."
+              ],
+              "practice": "Abrir y organizar tu primer repositorio de práctica."
             },
             {
-              "title": "Día 2. Instalación, configuración y terminal básica",
+              "title": "Clase 02. Terminal y configuración profesional",
               "topics": [
-                "Instalación de Git.",
-                "git –version.",
-                "Configuración de user.name y user.email.",
-                "Conceptos básicos de ruta, carpeta y archivo.",
-                "Comandos de terminal necesarios: cd, pwd/dir, ls, mkdir.",
-                "Abrir una carpeta de proyecto en Visual Studio Code.",
-                "Crear el primer repositorio de práctica."
-              ]
+                "Navegación con cd, ls/dir y mkdir",
+                "git –version",
+                "user.name y user.email",
+                "editor predeterminado",
+                "crear repositorio con git init",
+                "uso integrado en VS Code."
+              ],
+              "practice": "Inicializar un proyecto y preparar su entorno de trabajo."
             },
             {
-              "title": "Día 3. init, status, add y commit",
+              "title": "Clase 03. Los comandos esenciales de Git",
               "topics": [
-                "git init.",
-                "Estados de un archivo: untracked, modified y staged.",
-                "git status.",
-                "git add por archivo y por conjunto.",
-                "git commit -m.",
-                "Cómo escribir mensajes de commit útiles.",
-                "Práctica: registrar la evolución de un proyecto pequeño."
-              ]
+                "git status, git add y git commit",
+                "estados untracked, modified y staged",
+                "commits atómicos",
+                "convenciones de mensajes",
+                "inspección del árbol de trabajo."
+              ],
+              "practice": "Guardar tres versiones coherentes de un mismo proyecto."
             },
             {
-              "title": "Día 4. Historial, diferencias y seguimiento",
+              "title": "Clase 04. Historial, diferencias y trazabilidad",
               "topics": [
-                "git log y versiones abreviadas.",
-                "git log –oneline.",
-                "git diff.",
-                "git show.",
-                "Interpretar qué cambió entre versiones.",
-                "Importancia de commits pequeños y coherentes.",
-                "Práctica: revisar y documentar cambios."
-              ]
+                "git log, –oneline y –graph",
+                "git diff y git show",
+                "comparar archivos y commits",
+                "interpretar cambios",
+                "encontrar qué cambió y cuándo."
+              ],
+              "practice": "Investigar el historial de un proyecto con cambios simulados."
             },
             {
-              "title": "Día 5. Deshacer cambios de forma segura",
+              "title": "Clase 05. Recuperación segura de cambios",
               "topics": [
-                "git restore para cambios no confirmados.",
-                "Quitar archivos del staging area.",
-                "git revert para revertir un commit sin borrar historial.",
-                "Introducción a git reset y sus riesgos.",
-                "Diferencia entre recuperar un archivo y reescribir historial.",
-                "Práctica guiada de recuperación."
-              ]
+                "git restore y –staged",
+                "git revert",
+                "git reset: soft, mixed y hard a nivel conceptual",
+                "HEAD y referencias",
+                "buenas prácticas antes de sobrescribir."
+              ],
+              "practice": "Recuperar un archivo y revertir un error sin romper el historial."
             }
           ]
         },
         {
-          "title": "Semana 2: Organización, ramas y fusiones",
+          "title": "Ramas, fusiones y trabajo organizado",
+          "description": "Desarrollar funcionalidades sin afectar la versión principal.",
           "lessons": [
             {
-              "title": "Día 6. .gitignore y estructura profesional de repositorios",
+              "title": "Clase 06. Estructura de un repositorio limpio",
               "topics": [
-                "Qué archivos no deberían versionarse.",
-                "Creación de .gitignore.",
-                "Ignorar carpetas temporales, entornos y archivos sensibles.",
-                "Organización básica de carpetas.",
-                "README, src, data, docs y assets como ejemplos de estructura.",
-                "Práctica: limpiar un repositorio antes de publicarlo."
-              ]
+                "README y estructura de carpetas",
+                ".gitignore",
+                "archivos temporales y carpetas del editor",
+                "secretos y .env",
+                "git rm –cached",
+                "normas para subir datos y binarios."
+              ],
+              "practice": "Preparar un repositorio reproducible y sin archivos innecesarios."
             },
             {
-              "title": "Día 7. Ramas con branch y switch",
+              "title": "Clase 07. Ramas: experimenta sin miedo",
               "topics": [
-                "Qué es una rama y para qué sirve.",
-                "Rama principal y ramas de trabajo.",
-                "git branch.",
-                "git switch y creación de ramas.",
-                "Desarrollar una característica sin afectar main.",
-                "Práctica con dos líneas de desarrollo."
-              ]
+                "git branch, git switch y switch -c",
+                "main y ramas feature",
+                "referencias y HEAD",
+                "cambios independientes",
+                "nomenclatura y convenciones de ramas."
+              ],
+              "practice": "Crear una mejora en una rama y conservar main estable."
             },
             {
-              "title": "Día 8. Merge y combinación de trabajo",
+              "title": "Clase 08. Merge y resolución de conflictos",
               "topics": [
-                "Concepto de merge.",
-                "Fast-forward y merge commit a nivel conceptual.",
-                "git merge.",
-                "Verificar el historial después de una fusión.",
-                "Eliminar ramas ya integradas.",
-                "Práctica: integrar una característica terminada."
-              ]
+                "git merge",
+                "fast-forward y merge commit",
+                "lectura de marcadores de conflicto",
+                "comparación de cambios",
+                "resolución manual en VS Code",
+                "validación tras fusionar."
+              ],
+              "practice": "Provocar y resolver un conflicto real entre dos ramas."
             },
             {
-              "title": "Día 9. Conflictos de merge",
+              "title": "Clase 09. Herramientas de flujo avanzado",
               "topics": [
-                "Por qué aparecen conflictos.",
-                "Identificar marcadores de conflicto.",
-                "Elegir, combinar y editar cambios.",
-                "Marcar un conflicto como resuelto.",
-                "Finalizar el merge.",
-                "Buenas prácticas para reducir conflictos en equipos.",
-                "Práctica guiada con un conflicto controlado."
-              ]
+                "git stash y stash pop",
+                "introducción a cherry-pick",
+                "rebase frente a merge y cuándo evitar reescribir historial compartido",
+                "reflog como salvavidas."
+              ],
+              "practice": "Mover una corrección entre ramas y retomar trabajo pendiente."
             },
             {
-              "title": "Día 10. Repaso integrador de Git local",
+              "title": "Clase 10. Flujos Git para equipos",
               "topics": [
-                "Flujo completo: editar, status, add, commit.",
-                "Creación y fusión de ramas.",
-                "Recuperación de cambios.",
-                "Lectura del historial.",
-                "Organización del repositorio.",
-                "Mini proyecto local versionado."
-              ]
+                "Flujo de características (feature branches)",
+                "commits pequeños",
+                "reglas de nombres",
+                "revisiones previas al merge",
+                "convenciones y repositorios preparados para colaboración."
+              ],
+              "practice": "Simular el desarrollo de una funcionalidad con checklist."
             }
           ]
         },
         {
-          "title": "Semana 3: GitHub y colaboración",
+          "title": "GitHub y colaboración real",
+          "description": "Trabajar con repositorios en la nube y contribuir en equipo.",
           "lessons": [
             {
-              "title": "Día 11. Repositorios remotos y conexión con GitHub",
+              "title": "Clase 11. Repositorios remotos y autenticación",
               "topics": [
-                "Crear un repositorio en GitHub.",
-                "Concepto de origin.",
-                "git remote -v.",
-                "Conectar un repositorio local con uno remoto.",
-                "Primer push.",
-                "Visibilidad pública y privada.",
-                "Revisión del historial desde GitHub."
-              ]
+                "Crear un repositorio en GitHub",
+                "clone y remote -v",
+                "HTTPS frente a SSH",
+                "tokens y credenciales",
+                "verificación del origen remoto",
+                "repositorios públicos y privados."
+              ],
+              "practice": "Conectar un proyecto local con un repositorio remoto."
             },
             {
-              "title": "Día 12. clone, push, pull y fetch",
+              "title": "Clase 12. Sincronización sin perder trabajo",
               "topics": [
-                "git clone.",
-                "git push.",
-                "git pull.",
-                "git fetch y diferencia con pull.",
-                "Sincronizar cambios entre equipos.",
-                "Errores comunes al subir o bajar cambios.",
-                "Práctica en dos copias de un repositorio."
-              ]
+                "git push, pull y fetch",
+                "upstream",
+                "diferencias local/remoto",
+                "conflictos de sincronización",
+                "pull –rebase como concepto",
+                "hábitos antes de publicar."
+              ],
+              "practice": "Sincronizar cambios desde dos equipos o ramas simuladas."
             },
             {
-              "title": "Día 13. Autenticación y seguridad básica",
+              "title": "Clase 13. Forks y pull requests paso a paso",
               "topics": [
-                "Por qué GitHub ya no utiliza contraseña de cuenta para Git por HTTPS.",
-                "Concepto de token de acceso personal.",
-                "Introducción a claves SSH.",
-                "Buenas prácticas para no publicar credenciales.",
-                "Archivos .env y uso de .gitignore.",
-                "Revisión de seguridad antes de hacer push."
-              ]
+                "Fork y clone",
+                "rama de contribución",
+                "apertura de Pull Request",
+                "descripción clara y referencias cruzadas",
+                "diferencia entre base y compare",
+                "merge."
+              ],
+              "practice": "Realizar una contribución mediante Pull Request."
             },
             {
-              "title": "Día 14. README y Markdown",
+              "title": "Clase 14. Issues, Projects y revisiones",
               "topics": [
-                "Objetivo de un buen README.",
-                "Títulos, párrafos, listas y enlaces en Markdown.",
-                "Bloques de código.",
-                "Imágenes y capturas.",
-                "Secciones recomendadas: descripción, instalación, uso y autor.",
-                "Práctica: documentar el proyecto del curso."
-              ]
+                "GitHub Issues: etiquetas, responsables y tareas",
+                "GitHub Projects",
+                "comentarios de revisión",
+                "solicitar cambios y aprobar",
+                "trazabilidad entre issue, rama y PR."
+              ],
+              "practice": "Organizar un mini-sprint con tablero e issue vinculada."
             },
             {
-              "title": "Día 15. Issues y organización del trabajo",
+              "title": "Clase 15. Seguridad y protección del repositorio",
               "topics": [
-                "Qué es un Issue.",
-                "Crear tareas, errores y mejoras.",
-                "Etiquetas y responsables.",
-                "Milestones a nivel introductorio.",
-                "Vincular commits y pull requests con Issues.",
-                "Uso sencillo de Projects para visualizar pendientes."
-              ]
+                "Por qué no subir contraseñas ni tokens",
+                "revisión de secretos",
+                "permisos de colaboración",
+                "reglas de protección de ramas",
+                "Dependabot y alertas (panorama)."
+              ],
+              "practice": "Aplicar una lista de verificación de seguridad antes de publicar."
             }
           ]
         },
         {
-          "title": "Semana 4: Flujo colaborativo y portafolio",
+          "title": "Automatización y portafolio",
+          "description": "Convertir los conocimientos en un proyecto que puedas mostrar.",
           "lessons": [
             {
-              "title": "Día 16. Forks y contribuciones",
+              "title": "Clase 16. README que comunica y convence",
               "topics": [
-                "Qué es un fork.",
-                "Clonar un fork.",
-                "Hacer cambios sin permisos directos en el repositorio original.",
-                "Mantener referencia al repositorio principal.",
-                "Flujo básico de contribución abierta.",
-                "Práctica de fork y cambio independiente."
-              ]
+                "Markdown, tablas, enlaces e imágenes",
+                "instrucciones de instalación",
+                "documentación de uso",
+                "CONTRIBUTING, LICENSE y CHANGELOG",
+                "badges utilizados con criterio."
+              ],
+              "practice": "Diseñar el README y la documentación de un proyecto."
             },
             {
-              "title": "Día 17. Pull Requests y revisión de código",
+              "title": "Clase 17. Primeros pasos con GitHub Actions",
               "topics": [
-                "Qué es un Pull Request.",
-                "Abrir un PR desde una rama.",
-                "Descripción clara de los cambios.",
-                "Comentarios y revisión.",
-                "Solicitar cambios o aprobar.",
-                "Merge desde GitHub y eliminación de ramas.",
-                "Práctica colaborativa por parejas o equipos."
-              ]
+                "Qué es integración continua",
+                "workflows YAML",
+                "eventos push y pull_request",
+                "jobs y steps",
+                "uso de checkout",
+                "ejecutar una prueba o verificación sencilla."
+              ],
+              "practice": "Crear una automatización que se ejecute en cada push."
             },
             {
-              "title": "Día 18. Tags, versiones y Releases",
+              "title": "Clase 18. Versionado y entregas formales",
               "topics": [
-                "Qué es una etiqueta o tag.",
-                "Versionado semántico a nivel introductorio.",
-                "Crear tags locales y subirlos.",
-                "GitHub Releases.",
-                "Adjuntar notas y entregables.",
-                "Cuándo conviene marcar una versión estable."
-              ]
+                "git tag",
+                "versiones semánticas MAJOR.MINOR.PATCH",
+                "releases y notas de cambio",
+                "ramas protegidas",
+                "checklist de publicación y trazabilidad."
+              ],
+              "practice": "Publicar una versión 1.0 con nota de cambios."
             },
             {
-              "title": "Día 19. Perfil, portafolio y GitHub Pages",
+              "title": "Clase 19. Perfil GitHub y GitHub Pages",
               "topics": [
-                "Configurar un perfil profesional en GitHub.",
-                "Repositorios fijados y selección de proyectos.",
-                "README de perfil.",
-                "Buenas prácticas visuales y de documentación.",
-                "Introducción a GitHub Pages para publicar un sitio estático.",
-                "Preparar un repositorio para mostrarlo a reclutadores o clientes."
-              ]
+                "README del perfil",
+                "repositorios fijados",
+                "buenas prácticas de portafolio",
+                "publicación estática con Pages",
+                "enlaces y presentación visual",
+                "guía para entrevistas."
+              ],
+              "practice": "Publicar una página sencilla que enlace tu trabajo."
             },
             {
-              "title": "Día 20. Proyecto final colaborativo y cierre",
+              "title": "Clase 20. Proyecto integrador y demostración",
               "topics": [
-                "Creación del repositorio final.",
-                "Trabajo mediante ramas.",
-                "Commits y documentación.",
-                "Issue de seguimiento.",
-                "Pull Request y revisión.",
-                "Merge final y Release.",
-                "Revisión del repositorio como pieza de portafolio."
-              ]
+                "Repositorio y ramas",
+                "Issues y PR",
+                "revisión del historial",
+                "merge y release",
+                "automatización",
+                "documentación",
+                "presentación final y revisión grupal."
+              ],
+              "practice": "Entregar un repositorio completo, público o privado, listo para portafolio."
             }
           ]
         }
       ],
       "project": {
-        "title": "Repositorio profesional con flujo colaborativo",
-        "description": "El alumno publicará un proyecto pequeño en GitHub y aplicará un flujo completo de control de versiones y colaboración.",
+        "title": "Un repositorio profesional con flujo colaborativo",
+        "description": "Construirás un proyecto pequeño (sitio, script o análisis) y documentarás todo su ciclo en GitHub: desde el primer commit hasta una versión publicable.",
         "deliverables": [
-          "Repositorio con estructura clara.",
-          "Historial de commits descriptivos.",
-          "Uso de al menos una rama de trabajo.",
-          "Archivo .gitignore cuando sea necesario.",
-          "README completo en Markdown.",
-          "Issue para organizar una mejora o tarea.",
-          "Pull Request con revisión y merge.",
-          "Tag o Release final y repositorio listo para portafolio."
-        ],
-        "outcomes": [
-          "Controlar versiones sin duplicar archivos manualmente.",
-          "Trabajar con ramas y merges.",
-          "Recuperar cambios y revisar historial.",
-          "Sincronizar proyectos con GitHub.",
-          "Colaborar con Issues, forks y Pull Requests.",
-          "Construir un perfil y repositorio profesional."
+          "Repositorio con estructura, licencia y archivo README explicativo.",
+          "Historial de commits descriptivos y al menos una rama de trabajo.",
+          "Issue, pull request revisado y merge documentado.",
+          ".gitignore y revisión de archivos sensibles.",
+          "Tag o release con versión y notas de cambio.",
+          "Workflow sencillo de GitHub Actions; enlace a perfil o Pages cuando aplique."
         ]
       },
-      "theme": "git",
-      "shortTitle": "Git y GitHub",
-      "category": "desarrollo",
-      "categoryLabel": "Desarrollo y colaboración",
-      "tagline": "Organiza, colabora y comparte tus proyectos",
-      "summary": "Controla versiones, trabaja con ramas y colabora en GitHub para construir un repositorio profesional listo para tu portafolio.",
-      "tags": [
-        "Git",
-        "GitHub",
-        "Pull Requests"
-      ],
-      "icon": "git",
-      "pdf": "temarios/git-github.pdf",
-      "audience": "Para quienes quieren organizar sus proyectos, colaborar y construir un portafolio sin experiencia previa con Git."
+      "complementaryTopics": [
+        "Introducción a GitHub Codespaces y entornos de desarrollo en la nube.",
+        "Panorama de GitHub Copilot y buenas prácticas al aceptar sugerencias.",
+        "Buenas prácticas para repositorios de ciencia de datos y colaboración open source."
+      ]
     },
     {
       "id": "latex",
@@ -1154,14 +1536,27 @@ window.COURSE_DATA = {
       ],
       "icon": "file",
       "pdf": "temarios/latex.pdf",
-      "audience": "Para quienes necesitan preparar reportes, artículos o proyectos académicos con una presentación consistente."
+      "audience": "Para quienes necesitan preparar reportes, artículos o proyectos académicos con una presentación consistente.",
+      "programEdition": "Septiembre 2026",
+      "level": "Desde cero"
     },
     {
       "id": "r",
-      "title": "R desde Cero para Análisis de Datos",
-      "source": "05_r_analisis_datos_temario_v4.pdf",
-      "sourcePageCount": 7,
-      "startDate": "2026-09-28",
+      "title": "R para Análisis de Datos",
+      "shortTitle": "R para análisis de datos",
+      "category": "datos",
+      "categoryLabel": "Análisis de datos",
+      "theme": "r",
+      "tags": [
+        "RStudio",
+        "tidyverse",
+        "ggplot2",
+        "Quarto"
+      ],
+      "level": "Desde cero",
+      "startDate": "2026-10-30",
+      "startTime": "19:00",
+      "endTime": "20:00",
       "days": [
         "lunes",
         "martes",
@@ -1169,305 +1564,323 @@ window.COURSE_DATA = {
         "jueves",
         "viernes"
       ],
-      "startTime": "16:00",
-      "endTime": "17:00",
       "hours": 20,
       "sessions": 20,
       "sessionHours": 1,
-      "description": "Curso práctico para aprender R desde cero y utilizarlo en tareas de análisis de datos. Se trabaja con RStudio, estructuras de datos, funciones, importación de archivos, limpieza con tidyverse, transformación con dplyr, visualización con ggplot2, estadística descriptiva y análisis exploratorio sobre bases reales o simuladas.",
-      "objective": "Al finalizar, el alumno podrá importar, limpiar, transformar, resumir y visualizar datos en R, realizar análisis estadístico descriptivo, crear gráficas con ggplot2 y desarrollar un pequeño proyecto reproducible con código organizado y conclusiones basadas en datos.",
-      "requirements": [
-        "Computadora o laptop con conexión a internet.",
-        "R y RStudio Desktop instalados.",
-        "Cuenta de Google para Classroom y Drive.",
-        "No se requieren conocimientos previos de R ni programación."
+      "price": 299,
+      "summary": "Aprende R desde cero para importar y limpiar archivos, analizar información con tidyverse, crear gráficas con ggplot2 y comunicar tus hallazgos en un reporte reproducible.",
+      "audience": "Para estudiantes, investigadores y profesionales que quieren analizar datos de ventas, salud, educación o finanzas. No necesitas experiencia previa en programación, R ni estadística avanzada.",
+      "source": "temario_r_aprende_y_avanza_2026.pdf",
+      "sourcePageCount": 7,
+      "pdf": "temarios/temario_r_aprende_y_avanza_2026.pdf",
+      "image": "assets/curso-r-2026.png",
+      "programEdition": "Octubre–noviembre 2026",
+      "isCurrentProgram": true,
+      "description": "Aprende R desde cero y transfórmalo en una herramienta real para trabajar con información. Pasaremos de objetos, funciones y tablas a limpieza de datos, visualizaciones profesionales y reportes reproducibles sobre casos de ventas, salud, educación o finanzas.",
+      "objective": "Importar, depurar, transformar, explorar y comunicar datos con R, tidyverse y ggplot2, mediante un análisis reproducible con interpretación y conclusiones propias.",
+      "outcomes": [
+        "Escribir scripts claros y trabajar con RStudio.",
+        "Importar y limpiar archivos CSV y Excel.",
+        "Combinar, agrupar y transformar datos con tidyverse.",
+        "Crear gráficos profesionales y comunicar hallazgos.",
+        "Aplicar estadística descriptiva y regresión introductoria.",
+        "Generar un reporte reproducible y proyecto de portafolio."
       ],
+      "tools": [
+        "R",
+        "RStudio",
+        "tidyverse",
+        "dplyr",
+        "tidyr",
+        "ggplot2",
+        "readxl",
+        "Quarto"
+      ],
+      "requirements": [
+        "Computadora con conexión a internet, R y RStudio Desktop.",
+        "Cuenta de Google para Classroom y Drive.",
+        "No se requieren conocimientos previos de R, estadística avanzada ni programación."
+      ],
+      "scopeNote": "Los temas avanzados se presentan mediante ejemplos introductorios y recursos para profundizar. La profundidad se adapta a las horas del curso; los temas complementarios son un panorama para continuar aprendiendo.",
       "modules": [
         {
-          "title": "Semana 1: Fundamentos de R y estructuras de datos",
+          "title": "De cero al lenguaje R",
+          "description": "Aprender el entorno, programar y organizar información.",
           "lessons": [
             {
-              "title": "Día 1. Introducción a R y RStudio",
+              "title": "Clase 01. Introducción a R, RStudio y proyectos",
               "topics": [
-                "Qué es R y en qué áreas se utiliza.",
-                "Diferencia entre R y RStudio.",
-                "Instalación y recorrido por consola, script, Environment, Files y Plots.",
-                "Crear y guardar un script .R.",
-                "Ejecutar líneas y bloques de código.",
-                "Uso básico de ayuda con ? y help().",
-                "Primeras operaciones en R."
-              ]
+                "R frente a RStudio",
+                "instalación y paneles",
+                "scripts .R y proyectos .Rproj",
+                "consola, ayuda y paquetes",
+                "primeras operaciones",
+                "buenas prácticas de organización."
+              ],
+              "practice": "Crear tu primer script y proyecto en RStudio."
             },
             {
-              "title": "Día 2. Objetos, tipos de datos y operadores",
+              "title": "Clase 02. Variables, tipos y operaciones",
               "topics": [
-                "Asignación con <- y =.",
-                "Tipos numeric, integer, character y logical.",
-                "class y typeof.",
-                "Operadores aritméticos.",
-                "Operadores de comparación y lógicos.",
-                "Conversión de tipos.",
-                "Ejercicios básicos con variables."
-              ]
+                "Asignación <numeric, integer, character, logical y factor",
+                "operadores y conversiones",
+                "class, typeof y str",
+                "funciones matemáticas",
+                "tratamiento básico de fechas."
+              ],
+              "practice": "Automatizar cálculos de ingresos, porcentajes y variaciones."
             },
             {
-              "title": "Día 3. Vectores e indexación",
+              "title": "Clase 03. Vectores y lógica vectorizada",
               "topics": [
-                "Crear vectores con c().",
-                "Secuencias sencillas.",
-                "Operaciones vectorizadas.",
-                "Longitud, suma, media, mínimo y máximo.",
-                "Indexación por posición.",
-                "Filtros con condiciones lógicas.",
-                "Valores NA y detección con is.na().",
-                "Práctica con series numéricas y categorías."
-              ]
+                "c, seq y rep",
+                "indexación positiva, negativa y lógica",
+                "operaciones vectorizadas",
+                "sum, mean, median y quantile",
+                "valores faltantes NA y is.na."
+              ],
+              "practice": "Analizar una serie de mediciones sin escribir ciclos."
             },
             {
-              "title": "Día 4. Matrices, listas, factores y data frames",
+              "title": "Clase 04. Listas, matrices y tablas de datos",
               "topics": [
-                "Concepto de matriz.",
-                "Listas y almacenamiento de objetos distintos.",
-                "Factores y variables categóricas.",
-                "Data frames como estructura principal para análisis.",
-                "Crear data.frame manualmente.",
-                "Consultar filas y columnas.",
-                "Nombres de variables y buenas prácticas."
-              ]
+                "Matrices y listas",
+                "data.frame y tibble",
+                "nombres de columnas",
+                "selección de registros",
+                "factores y categorías",
+                "inspección con head, dim y summary."
+              ],
+              "practice": "Construir una base de datos pequeña y explorar sus campos."
             },
             {
-              "title": "Día 5. Condicionales, ciclos y funciones",
+              "title": "Clase 05. Condicionales, ciclos y funciones propias",
               "topics": [
-                "if, else y condiciones.",
-                "for y while a nivel introductorio.",
-                "Cuándo conviene evitar ciclos y usar operaciones vectorizadas.",
-                "Crear funciones con function().",
-                "Argumentos y return.",
-                "Mini práctica para automatizar cálculos repetitivos.",
-                "Repaso integrador de la semana."
-              ]
+                "if/else",
+                "for y apply en contexto",
+                "function, argumentos y valores retornados",
+                "uso de operadores lógicos",
+                "vectorización como alternativa",
+                "depuración de errores comunes."
+              ],
+              "practice": "Programar una función reutilizable para indicadores."
             }
           ]
         },
         {
-          "title": "Semana 2: Importación, limpieza y transformación",
+          "title": "Datos reales con tidyverse",
+          "description": "Importar, limpiar, unir y transformar archivos.",
           "lessons": [
             {
-              "title": "Día 6. Paquetes y ecosistema tidyverse",
+              "title": "Clase 06. El ecosistema tidyverse",
               "topics": [
-                "Qué es un paquete.",
-                "install.packages y library.",
-                "Qué incluye tidyverse.",
-                "Pipe |> y concepto de flujo de transformación.",
-                "Uso de dplyr, tidyr, readr y ggplot2.",
-                "Buenas prácticas para cargar paquetes al inicio del script."
-              ]
+                "install.packages y library",
+                "pipe nativo |>",
+                "dplyr, tidyr, readr y tibble",
+                "flujo reproducible",
+                "organización de scripts y rutas relativas con proyectos."
+              ],
+              "practice": "Crear un pipeline ordenado para preparar datos."
             },
             {
-              "title": "Día 7. Importar CSV y Excel",
+              "title": "Clase 07. Importación profesional de archivos",
               "topics": [
-                "read.csv y readr::read_csv.",
-                "Importación de Excel con readxl.",
-                "Rutas de archivos y proyecto de RStudio.",
-                "Revisión inicial con head, str y summary.",
-                "Problemas comunes de tipos de datos al importar.",
-                "Práctica con una base externa."
-              ]
+                "read_csv y read_excel",
+                "delimitadores y codificación",
+                "tipos de columnas",
+                "inspección con glimpse",
+                "importación de varias hojas",
+                "exportación segura a CSV."
+              ],
+              "practice": "Cargar una base de ventas desde CSV y Excel."
             },
             {
-              "title": "Día 8. Limpieza de datos",
+              "title": "Clase 08. Filtrar y crear variables con dplyr",
               "topics": [
-                "Detectar valores faltantes.",
-                "na.omit y estrategias básicas de tratamiento.",
-                "Duplicados.",
-                "Renombrar columnas con rename.",
-                "Estandarizar categorías.",
-                "Conversión de tipos.",
-                "Buenas prácticas antes del análisis."
-              ]
+                "select, filter, arrange y mutate",
+                "operadores lógicos",
+                "case_when e if_else",
+                "rename",
+                "distinct",
+                "combinaciones de filtros y reglas de calidad."
+              ],
+              "practice": "Limpiar registros y crear segmentos de clientes."
             },
             {
-              "title": "Día 9. select, filter y arrange",
+              "title": "Clase 09. Agrupaciones y resúmenes para negocio",
               "topics": [
-                "Seleccionar columnas con select.",
-                "Eliminar columnas no necesarias.",
-                "Filtrar filas con filter.",
-                "Combinar condiciones.",
-                "Ordenar con arrange.",
-                "Uso de desc.",
-                "Práctica de exploración de subconjuntos."
-              ]
+                "group_by y summarise",
+                "n, n_distinct, mean y sum",
+                "recuentos con count",
+                "porcentajes por categoría",
+                "orden de agregación",
+                "tablas comparativas."
+              ],
+              "practice": "Crear un ranking de categorías y un reporte de KPI."
             },
             {
-              "title": "Día 10. mutate y variables derivadas",
+              "title": "Clase 10. Limpieza, unión y reestructura de datos",
               "topics": [
-                "Crear nuevas columnas con mutate.",
-                "Cálculos con variables existentes.",
-                "if_else y case_when para clasificar.",
-                "Porcentajes y razones.",
-                "Transformaciones de texto sencillas.",
-                "Práctica: preparar indicadores para análisis."
-              ]
+                "NA y duplicados",
+                "replace_na y drop_na",
+                "pivot_longer/pivot_wider",
+                "left_join e inner_join",
+                "tipos de claves",
+                "strings y fechas básicas con stringr/lubridate."
+              ],
+              "practice": "Consolidar tablas de pedidos y clientes en formato analítico."
             }
           ]
         },
         {
-          "title": "Semana 3: Resumen, relaciones y visualización",
+          "title": "Visualización con ggplot2",
+          "description": "Diseñar gráficos que responden preguntas.",
           "lessons": [
             {
-              "title": "Día 11. group_by y summarise",
+              "title": "Clase 11. Gramática de gráficos y ggplot2",
               "topics": [
-                "Agrupar información por una o varias variables.",
-                "summarise con n, mean, sum, min y max.",
-                "na.rm = TRUE.",
-                "Indicadores por categoría o periodo.",
-                "Ordenar resúmenes.",
-                "Práctica: tabla de indicadores de negocio."
-              ]
+                "Datos, aesthetics y geoms",
+                "aes y mapeos",
+                "geom_point, geom_line y geom_col",
+                "títulos, etiquetas y temas",
+                "buenas prácticas visuales."
+              ],
+              "practice": "Graficar tendencias de ingresos con estilo profesional."
             },
             {
-              "title": "Día 12. Joins y combinación de tablas",
+              "title": "Clase 12. Distribuciones y comparación de grupos",
               "topics": [
-                "Concepto de clave.",
-                "left_join, inner_join y full_join.",
-                "Evitar columnas duplicadas innecesarias.",
-                "Detectar registros sin coincidencia.",
-                "Práctica: unir ventas con catálogo de productos y clientes."
-              ]
+                "Histogramas, densidades y boxplots",
+                "dispersiones",
+                "facetas con facet_wrap",
+                "escalas continuas/discretas",
+                "outliers",
+                "interpretación responsable de la variación."
+              ],
+              "practice": "Comparar distribuciones de ventas entre sucursales."
             },
             {
-              "title": "Día 13. Datos largos y anchos con tidyr",
+              "title": "Clase 13. Visualización avanzada y storytelling",
               "topics": [
-                "Diferencia entre formato wide y long.",
-                "pivot_longer.",
-                "pivot_wider.",
-                "Cuándo ggplot2 funciona mejor con datos largos.",
-                "Práctica: transformar una tabla mensual para análisis."
-              ]
+                "Colores accesibles",
+                "anotaciones y líneas de referencia",
+                "coord_flip",
+                "escalas y formatos",
+                "facets",
+                "exportación con ggsave",
+                "elección del gráfico correcto."
+              ],
+              "practice": "Diseñar un panel de tres gráficos consistentes."
             },
             {
-              "title": "Día 14. Estadística descriptiva en R",
+              "title": "Clase 14. Estadística descriptiva aplicada",
               "topics": [
-                "Media, mediana, cuantiles y rango.",
-                "Varianza y desviación estándar.",
-                "Tablas de frecuencias.",
-                "summary y funciones descriptivas.",
-                "Interpretación de medidas de tendencia y dispersión.",
-                "Práctica con variables numéricas y categóricas."
-              ]
+                "Media, mediana, moda conceptual y cuartiles",
+                "desviación estándar y percentiles",
+                "group_by",
+                "correlación",
+                "tablas cruzadas",
+                "qué no puede concluirse de los datos."
+              ],
+              "practice": "Redactar un resumen estadístico acompañado de visualizaciones."
             },
             {
-              "title": "Día 15. Introducción a ggplot2",
+              "title": "Clase 15. EDA: análisis exploratorio completo",
               "topics": [
-                "Gramática de gráficos: datos, aes y geom.",
-                "Gráfico de dispersión con geom_point.",
-                "Gráfico de barras con geom_bar/geom_col.",
-                "Títulos y etiquetas con labs.",
-                "Temas básicos.",
-                "Práctica: construir gráficos desde un data frame."
-              ]
+                "Hipótesis y preguntas de negocio",
+                "faltantes, valores atípicos y sesgos",
+                "relaciones entre variables",
+                "segmentación",
+                "interpretación de hallazgos",
+                "checklist de calidad."
+              ],
+              "practice": "Entregar un diagnóstico exploratorio de un dataset."
             }
           ]
         },
         {
-          "title": "Semana 4: Visualización, análisis exploratorio y proyecto",
+          "title": "Reportes y análisis reproducible",
+          "description": "Comunicar resultados y automatizar el trabajo.",
           "lessons": [
             {
-              "title": "Día 16. Gráficas para distribuciones y comparación",
+              "title": "Clase 16. Texto, categorías y fechas",
               "topics": [
-                "Histogramas.",
-                "Boxplots.",
-                "Gráficas de líneas.",
-                "Color y grupos dentro de aes.",
-                "Facetas con facet_wrap.",
-                "Elegir una visualización según el tipo de variable.",
-                "Práctica con varias preguntas de análisis."
-              ]
+                "stringr: detectar y limpiar cadenas",
+                "expresiones regulares introductorias",
+                "factores con forcats",
+                "lubridate para fechas",
+                "agrupación mensual",
+                "datos sucios reales."
+              ],
+              "practice": "Normalizar nombres y construir una serie mensual."
             },
             {
-              "title": "Día 17. Correlación y relaciones entre variables",
+              "title": "Clase 17. Inferencia básica y correlación",
               "topics": [
-                "Concepto de correlación.",
-                "cor y matriz de correlación básica.",
-                "Scatter plots para relaciones numéricas.",
-                "Añadir línea de tendencia con geom_smooth.",
-                "Diferencia entre correlación y causalidad.",
-                "Práctica de interpretación."
-              ]
+                "Muestreo y población",
+                "intervalos a nivel conceptual",
+                "cor y matrices de correlación",
+                "correlación no implica causalidad",
+                "introducción a pruebas de comparación."
+              ],
+              "practice": "Examinar relación entre dos variables y sus límites."
             },
             {
-              "title": "Día 18. Fechas y texto con lubridate y stringr",
+              "title": "Clase 18. Regresión lineal inicial con lm",
               "topics": [
-                "Convertir y extraer componentes de fechas.",
-                "year, month y day.",
-                "Agrupar por periodo.",
-                "str_detect, str_replace y str_to_lower.",
-                "Limpieza de categorías de texto.",
-                "Práctica con registros que contienen fechas y cadenas."
-              ]
+                "Variables predictoras y respuesta",
+                "fórmula y lm",
+                "predict",
+                "lectura básica de coeficientes y R²",
+                "revisión de residuos de forma introductoria",
+                "precauciones al interpretar."
+              ],
+              "practice": "Ajustar un modelo sencillo y visualizar su tendencia."
             },
             {
-              "title": "Día 19. Análisis exploratorio y regresión lineal introductoria",
+              "title": "Clase 19. Reportes con Quarto y datos reproducibles",
               "topics": [
-                "Flujo de un análisis exploratorio de datos.",
-                "Plantear preguntas antes de graficar.",
-                "Comparar grupos y revisar distribuciones.",
-                "Modelo lineal simple con lm a nivel introductorio.",
-                "Interpretar pendiente y ajuste sin profundizar en inferencia.",
-                "Preparación del proyecto final."
-              ]
+                "Documentos .qmd",
+                "fragmentos de R",
+                "texto, tablas y gráficos",
+                "parámetros básicos",
+                "exportación HTML/PDF según entorno",
+                "introducción visual a Shiny como siguiente paso."
+              ],
+              "practice": "Generar un reporte HTML con código, gráficos y conclusiones."
             },
             {
-              "title": "Día 20. Proyecto final y cierre",
+              "title": "Clase 20. Proyecto final: de archivo a hallazgos",
               "topics": [
-                "Importación del conjunto de datos.",
-                "Limpieza y transformación.",
-                "Resumen estadístico.",
-                "Creación de visualizaciones.",
-                "Identificación de hallazgos.",
-                "Organización del script.",
-                "Presentación del análisis y recomendaciones para portafolio."
-              ]
+                "Carga y validación",
+                "limpieza con dplyr/tidyr",
+                "estadística",
+                "ggplot2",
+                "interpretación",
+                "organización del repositorio y presentación de resultados."
+              ],
+              "practice": "Presentar un análisis reproducible y un reporte para portafolio."
             }
           ]
         }
       ],
       "project": {
-        "title": "Análisis exploratorio de datos con R",
-        "description": "El alumno elegirá o recibirá un conjunto de datos y desarrollará un análisis reproducible desde la importación hasta la visualización y conclusiones.",
+        "title": "Análisis de datos reproducible con R",
+        "description": "Partirás de un conjunto de datos real o de práctica para responder preguntas, identificar patrones y producir un reporte claro con gráficos y conclusiones.",
         "deliverables": [
-          "Script .R organizado y ejecutable.",
-          "Importación y revisión inicial de datos.",
-          "Limpieza y tratamiento básico de datos faltantes.",
-          "Transformaciones con dplyr.",
-          "Al menos una tabla resumen por grupos.",
-          "Mínimo tres visualizaciones con ggplot2.",
-          "Interpretación de hallazgos principales.",
-          "Presentación breve del proyecto para portafolio."
-        ],
-        "outcomes": [
-          "Trabajar con RStudio y scripts reproducibles.",
-          "Importar y limpiar archivos reales.",
-          "Transformar datos con dplyr y tidyr.",
-          "Realizar estadística descriptiva.",
-          "Construir gráficas claras con ggplot2.",
-          "Entregar un análisis completo para portafolio."
+          "Proyecto RStudio con scripts ordenados y datos de entrada.",
+          "Carga y depuración documentada; tratamiento de datos faltantes.",
+          "Transformaciones, uniones o agregaciones mediante dplyr/tidyr.",
+          "Tabla de KPI y mínimo tres gráficos con ggplot2.",
+          "Resumen estadístico e interpretación con precauciones.",
+          "Reporte en Quarto (HTML recomendado) o presentación de hallazgos."
         ]
       },
-      "theme": "r",
-      "shortTitle": "R para análisis de datos",
-      "category": "datos",
-      "categoryLabel": "Análisis de datos",
-      "tagline": "Encuentra historias detrás de los datos",
-      "summary": "Importa, limpia y transforma datos en R, crea gráficas con ggplot2 y desarrolla un análisis reproducible para tu portafolio.",
-      "tags": [
-        "RStudio",
-        "tidyverse",
-        "ggplot2"
-      ],
-      "icon": "code",
-      "pdf": "temarios/r.pdf",
-      "audience": "Para quienes quieren empezar a programar en R y aprender análisis, estadística descriptiva y visualización de datos."
+      "complementaryTopics": [
+        "Introducción al análisis de series de tiempo con R.",
+        "Panorama de dashboards con Shiny y flexdashboard.",
+        "Siguiente paso: tidymodels para machine learning con R."
+      ]
     }
   ]
 };
