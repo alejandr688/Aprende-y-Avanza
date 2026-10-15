@@ -61,4 +61,4 @@ No publiques toda la carpeta de trabajo: contiene Git y copias históricas. Apre
 
 Los nuevos grupos aparecen antes del catálogo, en tarjetas con ilustración, fecha destacada, horario, nivel, duración, precio y acceso a inscripción. Los grupos en curso se consultan en un desplegable separado.
 
-Las tarjetas de nuevos grupos y del catálogo incluyen un botón directo «Descargar temario» para cada curso con PDF disponible. Se identifica la edición histórica cuando corresponde. Python conserva su consulta por WhatsApp porque no se proporcionó un PDF.
+Las tarjetas de nuevos grupos y del catálogo incluyen un botón directo «Descargar temario» para cada curso con PDF disponible. Se identifica la edición histórica cuando corresponde. Python incluye su PDF descargable y un enlace a https://alejandr688.github.io/Cursopython/ tanto en el catálogo como en su ficha. La edición de septiembre–octubre permanece concluida.

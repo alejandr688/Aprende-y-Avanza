@@ -1,6 +1,9 @@
 /* Cursos y comunidad · octubre–noviembre de 2026 */
 .course-art.has-image { height: 230px; padding: 0; background: #fff; }
 .course-illustration { display: block; width: 100%; height: 100%; object-fit: contain; }
+.cohort-poster { display: block; margin-top: 16px; }
+.cohort-poster img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.cohort-poster span { display: block; margin-top: 6px; font-size: 11px; text-decoration: underline; }
 .course-content > .course-level { min-height: 0; color: var(--ink); font-size: 12px; font-weight: 650; margin-top: 16px; }
 .course-level span { display: block; color: var(--muted); font-weight: 400; margin-top: 3px; }
 .detail-facts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
@@ -128,3 +131,5 @@
   .launch-includes strong { background:#fffdf7a6; border-radius:5px; padding:7px; }
   .capture-grid > a { padding:7px; border-radius:12px; }.capture-eyebrow { font-size:9px; }
 }
+
+.course-page-link { display: flex; width: 100%; justify-content: space-between; margin-top: 14px; }

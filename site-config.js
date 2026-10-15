@@ -87,6 +87,7 @@ window.SITE_CONFIG = {
     {
       "id": "python-septiembre-2026",
       "courseId": "python",
+      "image": "assets/curso-python-septiembre-2026.jpg",
       "label": "Septiembre–octubre 2026",
       "status": "completed",
       "start": "2026-09-10",
