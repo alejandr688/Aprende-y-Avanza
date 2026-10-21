@@ -2,6 +2,30 @@
 
 Abre **index.html** con doble clic. Conserva los archivos y carpetas juntos; no necesitas instalar programas.
 
+## Actualización del 21 de octubre de 2026
+
+Se añadieron las siete fotografías de carteles proporcionadas el 21 de octubre: las cuatro de Git y GitHub, R, Excel + Power BI y Machine Learning aparecen en sus tarjetas de próximos grupos y en sus fichas; las tres convocatorias generales están en una galería junto a las próximas ediciones. El catálogo ofrece además un enlace directo a cada foto del curso. Todas se conservan completas, sin modificar, y se pueden abrir en tamaño original.
+
+**Precios confirmados por el propietario:** los cuatro próximos grupos (Git, R, Excel + Power BI y Machine Learning) cuestan **$300 MXN por curso completo**. Los grupos actuales de Python conservan **$299 MXN**. Se actualizaron las convocatorias, los datos de los programas y la sección de pagos. Los PDF se conservan como fueron entregados y pueden indicar los importes anteriores; la web identifica el precio vigente.
+
+Se agregaron los tres grupos actuales de **Python desde Cero + Introducción al Análisis de Datos**, con inicio el **12 de octubre de 2026**, 25 clases según el cartel y pago único de **$299 MXN**:
+
+| Grupo | Horario |
+| --- | --- |
+| Matutino | Lunes a viernes, 8:00–9:00 a. m. |
+| Nocturno | Lunes a viernes, 8:00–9:00 p. m. |
+| Fin de semana | Sábados y domingos, 7:00–9:00 p. m. |
+
+Los horarios, el inicio y el precio fueron confirmados por el propietario en esta actualización. No se calcula una fecha de cierre ni un total de horas. Se conserva el grupo histórico de septiembre como finalizado. Los grupos actuales aparecen a la vista, antes de las próximas convocatorias; el filtro En curso incluye Python y SQL mientras este último siga vigente.
+
+La ficha actual de Python incluye los nueve temas del cartel: fundamentos; condicionales y bucles; listas, tuplas, conjuntos y diccionarios; funciones y archivos; regex y errores; POO; SQLite3 y MySQL; NumPy y Pandas; Matplotlib, Seaborn y análisis de datos. El PDF existente se identifica como referencia de septiembre de 2026; no se presenta como un nuevo PDF de octubre.
+
+Las ocho imágenes originales compartidas por el propietario están integradas: el cartel y las cinco capturas de grupos, Classroom y Drive aparecen junto a los grupos actuales de Python. Las dos capturas de opiniones de WhatsApp aparecen junto a sus transcripciones en **Referencias**. Todas se pueden abrir completas. El cartel conserva su contenido original; los horarios vigentes son los confirmados en las tarjetas.
+
+Las dos nuevas referencias de WhatsApp aparecen en texto directamente en **Referencias**, con atribución «Estudiante de Python», porque las capturas no identifican sus nombres. Se mantienen las capturas anteriores de Facebook y los otros nueve testimonios en el desplegable. No se añadieron enlaces de acceso a grupos o aulas en el texto del sitio. Las capturas originales se conservan completas, tal como las proporcionó el propietario.
+
+Python admite transferencia, depósito en OXXO y PayPal. La ficha y la sección de pagos indican el total de PayPal de $319 MXN ($299 + $20 de comisión), y la posible comisión adicional de OXXO. El concepto indicado es «PYTHON + TU NOMBRE». Los datos bancarios se solicitan por WhatsApp.
+
 ## Actualización del 14 de octubre de 2026
 
 Los cuatro temarios nuevos sustituyen las convocatorias anteriores de las próximas ediciones de R y Machine Learning. Se conservan los demás cursos y los grupos anteriores de Excel y SQL.
@@ -32,7 +56,7 @@ Excel, R y Git comienzan desde las bases. Machine Learning requiere Python bási
 - home.css, palette.css, courses-2026.css: diseño adaptable.
 - home.js: catálogo, fichas, filtros, grupos y contacto.
 - site-config.js: contacto, convocatorias y referencias.
-- courses.js: seis programas detallados; Python conserva su ficha básica en home.js.
+- courses.js: seis programas detallados; Python tiene su ficha actual de octubre en home.js.
 - assets/curso-*-2026.png: las cuatro imágenes nuevas, conservadas completas.
 - assets/referencias-*-2026.png: capturas originales.
 - assets/aprende-y-avanza-*.png: identidad y portada existentes.
@@ -59,6 +83,6 @@ La actualización se guarda localmente. **Aprende-y-Avanza-General.zip** contien
 
 No publiques toda la carpeta de trabajo: contiene Git y copias históricas. Aprende-y-Avanza-Web.zip es anterior y se conserva. Después de publicar, verifica WhatsApp y las descargas desde el dominio final.
 
-Los nuevos grupos aparecen antes del catálogo, en tarjetas con ilustración, fecha destacada, horario, nivel, duración, precio y acceso a inscripción. Los grupos en curso se consultan en un desplegable separado.
+Los grupos actuales y los próximos grupos aparecen antes del catálogo; las próximas convocatorias se presentan en tarjetas con ilustración, fecha destacada, horario, nivel, duración, precio y acceso a inscripción. Los grupos en curso aparecen a la vista antes de las próximas convocatorias.
 
 Las tarjetas de nuevos grupos y del catálogo incluyen un botón directo «Descargar temario» para cada curso con PDF disponible. Se identifica la edición histórica cuando corresponde. Python incluye su PDF descargable y un enlace a https://alejandr688.github.io/Cursopython/ tanto en el catálogo como en su ficha. La edición de septiembre–octubre permanece concluida.
