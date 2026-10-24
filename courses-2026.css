@@ -209,6 +209,14 @@
 .testimonial-capture img { display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:contain; }
 .testimonial-capture > span { display:flex; align-items:center; justify-content:space-between; padding:12px 14px; background:#f5e5ef; font-size:12px; font-weight:700; color:#7e3f65; }
 .testimonial-capture:hover > span { text-decoration:underline; }
+.featured-references .quote-card-conversation { grid-column:1 / -1; }
+.quote-card-conversation blockquote { max-width:850px; }
+.quote-card-conversation blockquote p + p { margin-top:14px; }
+.testimonial-gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-bottom:24px; }
+.testimonial-gallery .testimonial-capture { min-width:0; margin-bottom:0; }
+.testimonial-gallery .testimonial-capture img { aspect-ratio:4/3; }
+.testimonial-gallery .testimonial-capture > span { display:block; font-size:11px; line-height:1.6; }
+.testimonial-gallery .testimonial-capture small { display:block; margin-top:5px; font-size:11px; font-weight:500; }
 .launch-visual.has-photo { height:440px; padding:48px 16px 36px; }
 .launch-poster { display:flex; flex-direction:column; align-items:center; width:100%; height:100%; gap:10px; }
 .launch-visual.has-photo img { display:block; width:100%; height:calc(100% - 25px); min-height:0; object-fit:contain; mix-blend-mode:normal; transform:none; border-radius:5px; }
@@ -232,6 +240,7 @@
   .course-capture-image { height:auto; aspect-ratio:4/3; }
   .course-capture-image.poster { aspect-ratio:1; }
   .testimonial-capture > span { font-size:11px; }
+  .testimonial-gallery { grid-template-columns:1fr; gap:16px; }
   .launch-visual.has-photo { height:420px; padding:45px 14px 36px; }
   .campaign-photo-grid { grid-template-columns:1fr; gap:20px; }
   .campaign-photo-image { height:auto; aspect-ratio:3/4; }

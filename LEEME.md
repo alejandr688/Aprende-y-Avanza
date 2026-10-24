@@ -2,6 +2,12 @@
 
 Abre **index.html** con doble clic. Conserva los archivos y carpetas juntos; no necesitas instalar programas.
 
+## Actualización del 23 de octubre de 2026
+
+Se añadió en **Referencias → Experiencias en Python** el testimonio de la madre de un estudiante de 10 años. Sus mensajes destacan que entiende las clases, realiza los ejercicios, crea otros ejemplos y desea seguir tomando cursos. Se presenta como una sola experiencia, con fragmentos transcritos y sin atribuir nombres que no aparecen en las capturas.
+
+La tarjeta incluye las tres capturas distintas de la conversación de WhatsApp, completas y con enlaces para ampliarlas. La cuarta imagen proporcionada repite la tercera y no se muestra de nuevo. Las vistas previas del video forman parte de las capturas; no se dispone del archivo de video para reproducirlo.
+
 ## Actualización del 21 de octubre de 2026
 
 Se añadieron las siete fotografías de carteles proporcionadas el 21 de octubre: las cuatro de Git y GitHub, R, Excel + Power BI y Machine Learning aparecen en sus tarjetas de próximos grupos y en sus fichas; las tres convocatorias generales están en una galería junto a las próximas ediciones. El catálogo ofrece además un enlace directo a cada foto del curso. Todas se conservan completas, sin modificar, y se pueden abrir en tamaño original.

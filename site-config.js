@@ -153,6 +153,40 @@ window.SITE_CONFIG = {
   ],
   "references": [
     {
+      "quote": "Estan muy bien mi hijo le está entendiendo super bien. Y tiene 10 años. Realiza los ejercicios y incluso realiza otras ideas. Le cambia a otro tipo de ejemplos.",
+      "additionalQuotes": [
+        "Excelente maestro imparte muy claro las clases",
+        "Y pues yo estoy súper agradecida con ustedes. […] Y claro que si lo seguiré inscribiendo"
+      ],
+      "attribution": "Madre de un estudiante de Python",
+      "edition": "Curso de Python · fragmentos de una conversación de WhatsApp",
+      "context": "Aprender Python a los 10 años",
+      "captures": [
+        {
+          "src": "assets/referencia-python-madre-aprendizaje.png",
+          "alt": "Conversación de WhatsApp: una madre comenta que su hijo de 10 años entiende las clases de Python, realiza los ejercicios y crea sus propios ejemplos; destaca la claridad del maestro.",
+          "width": 1263,
+          "height": 991,
+          "label": "1. Aprendizaje y ejercicios"
+        },
+        {
+          "src": "assets/referencia-python-madre-agradecimiento.png",
+          "alt": "Continuación de la misma conversación: la madre recomienda los cursos, agradece la oportunidad de aprender y comparte la vista previa de un video de los ejercicios de su hijo.",
+          "width": 1247,
+          "height": 980,
+          "label": "2. Agradecimiento y recomendación"
+        },
+        {
+          "src": "assets/referencia-python-madre-continuidad.png",
+          "alt": "Final de la misma conversación de WhatsApp: la madre comparte la vista previa de un video de programación y expresa que seguirá inscribiendo a su hijo en los cursos.",
+          "width": 1247,
+          "height": 987,
+          "label": "3. Seguir aprendiendo"
+        }
+      ],
+      "featured": true
+    },
+    {
       "quote": "Me encanta! Creo que al no tomarlas en vivo, podría tal vez dificultarme las dudas pero explicas muy detalladamente y los apuntes están súper bien y a un precio que como estudiante lo agradezco mucho",
       "attribution": "Estudiante de Python",
       "edition": "Curso de Python · mensaje de WhatsApp",
